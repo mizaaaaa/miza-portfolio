@@ -10,63 +10,85 @@ import adminLoginImg from "./assets/projects/admin-login.png";
 import counsellorLoginImg from "./assets/projects/counsellor-login.png";
 import counsellorViewImg from "./assets/projects/counsellor-view.png";
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [showSafeSpace, setShowSafeSpace] = useState(false);
   return (
     <div className="bg-black text-white min-h-screen overflow-hidden">
 
       {/* Navbar */}
-            {/* Navbar */}
-      <nav className="fixed top-0 w-full backdrop-blur-md bg-black/30 border-b border-white/10 z-50">
+<nav className="fixed top-0 w-full backdrop-blur-md bg-black/30 border-b border-white/10 z-50">
+  <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 className="text-2xl font-bold text-purple-400">
+      Miza M
+    </h1>
 
-          <h1 className="text-2xl font-bold text-purple-400">
-            Miza M 
-          </h1>
+    {/* Desktop Menu */}
+    <ul className="hidden md:flex gap-8 text-gray-300">
+      <li>
+        <a href="#about" className="hover:text-white transition">
+          About
+        </a>
+      </li>
 
-          <ul className="hidden md:flex gap-8 text-gray-300">
+      <li>
+        <a href="#skills" className="hover:text-white transition">
+          Skills
+        </a>
+      </li>
 
-            <li>
-              <a
-                href="#about"
-                className="hover:text-white transition"
-              >
-                About
-              </a>
-            </li>
+      <li>
+        <a href="#projects" className="hover:text-white transition">
+          Projects
+        </a>
+      </li>
 
-            <li>
-              <a
-                href="#skills"
-                className="hover:text-white transition"
-              >
-                Skills
-              </a>
-            </li>
+      <li>
+        <a href="#contact" className="hover:text-white transition">
+          Contact
+        </a>
+      </li>
+    </ul>
 
-            <li>
-              <a
-                href="#projects"
-                className="hover:text-white transition"
-              >
-                Projects
-              </a>
-            </li>
+    {/* Mobile Hamburger */}
+    <button
+      className="md:hidden text-white text-3xl"
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      ☰
+    </button>
 
-            <li>
-              <a
-                href="#contact"
-                className="hover:text-white transition"
-              >
-                Contact
-              </a>
-            </li>
+  </div>
 
-          </ul>
+  {/* Mobile Menu */}
+  {menuOpen && (
+    <ul className="md:hidden flex flex-col items-center gap-4 py-4 bg-black/90 text-white">
+      <li>
+        <a href="#about" onClick={() => setMenuOpen(false)}>
+          About
+        </a>
+      </li>
 
-        </div>
+      <li>
+        <a href="#skills" onClick={() => setMenuOpen(false)}>
+          Skills
+        </a>
+      </li>
 
-      </nav>
+      <li>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>
+          Contact
+        </a>
+      </li>
+    </ul>
+  )}
+</nav>
 
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center text-center px-6">
@@ -525,12 +547,13 @@ function App() {
       {/* SafeSpace Modal */}
 {showSafeSpace && (
   <div
-  className="fixed inset-0 bg-black/90 z-50 overflow-y-auto"
+  className="fixed inset-0 bg-black z-50 overflow-y-auto backdrop-blur-sm"
+
   onClick={() => setShowSafeSpace(false)}
 >
 
     <div
-  className="max-w-6xl mx-auto p-8 relative"
+  className="max-w-7xl mx-auto p-8 relative bg-black min-h-screen"
   onClick={(e) => e.stopPropagation()}
 >
   <button
