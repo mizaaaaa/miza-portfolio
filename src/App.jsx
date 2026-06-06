@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import welcomeImg from "./assets/projects/welcome.png";
 import reportSubmissionImg from "./assets/projects/report-submission.png";
 import myReportsImg from "./assets/projects/my-reports.png";
@@ -55,7 +56,7 @@ function App() {
       className="md:hidden text-white text-3xl"
       onClick={() => setMenuOpen(!menuOpen)}
     >
-      ☰
+      {menuOpen ? <X size={28} /> : <Menu size={28} />}
     </button>
 
   </div>
