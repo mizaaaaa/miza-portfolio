@@ -58,37 +58,37 @@ function App() {
 <ul className="hidden md:flex gap-8 text-gray-300">
 
   <li>
-    <a href="#about" className="hover:text-white transition">
+    <a href="#about" className="hover:text-purple-400 transition">
       About
     </a>
   </li>
 
   <li>
-    <a href="#skills" className="hover:text-white transition">
+    <a href="#skills" className="hover:text-purple-400 transition">
       Skills
     </a>
   </li>
 
   <li>
-    <a href="#projects" className="hover:text-white transition">
+    <a href="#projects" className="hover:text-purple-400 transition">
       Projects
     </a>
   </li>
 
   <li>
-    <a href="#experience" className="hover:text-white transition">
+    <a href="#experience" className="hover:text-purple-400 transition">
       Experience
     </a>
   </li>
 
   <li>
-    <a href="#education" className="hover:text-white transition">
+    <a href="#education" className="hover:text-purple-400 transition">
       Education
     </a>
   </li>
 
   <li>
-    <a href="#contact" className="hover:text-white transition">
+    <a href="#contact" className="hover:text-purple-400 transition">
       Contact
     </a>
   </li>
@@ -174,10 +174,9 @@ function App() {
           </h2>
 
           <p className="max-w-2xl text-gray-300 text-lg leading-relaxed">
-  Passionate about Full Stack Development and building
-  scalable, user-friendly software solutions. Experienced
-  in developing frontend interfaces, backend systems,
-  and database-driven applications using modern technologies.
+ Passionate about Full Stack Development and AI-powered solutions.
+Experienced in building scalable web applications, intelligent systems,
+and user-focused software that solve real-world problems.
 </p>
 
           {/* Buttons */}
@@ -236,7 +235,7 @@ function App() {
     </div>
 
     {/* Right Side */}
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
 
       <div className="grid grid-cols-2 gap-6">
 
@@ -401,8 +400,7 @@ function App() {
           {/* Project Cards */}
           <div className="grid md:grid-cols-2 gap-8">
              {/* Project 1 - SafeSpace */}
-<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition duration-300">
-
+<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
   <h3 className="text-2xl font-bold mb-4">
     SafeSpace
   </h3>
@@ -437,12 +435,12 @@ function App() {
     onClick={() => setShowSafeSpace(true)}
     className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
   >
-    View details →
+    View Details →
   </button>
   </div>
 
    {/* Project 2 */}
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
 
               <h3 className="text-2xl font-bold mb-4">
                 Carbon Footprint Tracker
@@ -474,14 +472,13 @@ function App() {
     onClick={() => setShowCarbon(true)}
     className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
   >
-    View details →
+    View Details →
   </button>
 
             </div>
 
             {/* Project 3 */}
-<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
+<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
   <h3 className="text-2xl font-bold mb-4">
     Pragmatic Behaviour Analysis
   </h3>
@@ -509,7 +506,7 @@ function App() {
   onClick={() => setShowPragmatic(true)}
   className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
 >
-  View details →
+  View Details →
 </button>
 
 </div>
@@ -517,8 +514,7 @@ function App() {
            
 
             {/* Project 4 */}
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4">
                 AI-Powered Archaeological Site Mapping
               </h3>
@@ -547,7 +543,7 @@ function App() {
   onClick={() => setShowArchaeological(true)}
   className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
 >
-  View details →
+  View Details →
 </button>
 
             </div>
@@ -574,8 +570,7 @@ function App() {
     <div className="grid md:grid-cols-2 gap-8">
 
       {/* Experience 1 */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-2xl font-bold">
             AI Intern
@@ -600,8 +595,7 @@ function App() {
       </div>
 
       {/* Experience 2 */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-2xl font-bold">
             AI Intern
@@ -632,15 +626,16 @@ function App() {
 </section>
 
 {/* Education Section */}
-<section id="education" className="py-6 px-8">
+<section id="education" className="py-12 px-8">
 
   <div className="max-w-5xl mx-auto">
 
     <h2 className="text-4xl font-bold mb-12 text-center">
       Education
     </h2>
-
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+    
+<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
+    
 
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
 
@@ -758,7 +753,8 @@ as well as collaborations on innovative projects.
 </section>
 
 {/* Footer */}
-<footer className="border-t border-white/10 py-8 px-6">
+
+<footer className="border-t border-white/10 py-8 px-6 mt-12">
 
   <div className="max-w-6xl mx-auto text-center">
 
@@ -773,6 +769,8 @@ as well as collaborations on innovative projects.
   </div>
 
 </footer>
+
+
 
    {/* SafeSpace Modal */}
 {showSafeSpace && (
