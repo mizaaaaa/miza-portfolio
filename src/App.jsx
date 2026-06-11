@@ -46,79 +46,114 @@ function App() {
   <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
     <h1 className="text-2xl font-bold text-purple-400">
-      Miza M
+      <a
+  href="#home"
+  className="text-2xl font-bold text-purple-400 hover:text-purple-300 transition"
+>
+  Miza M
+</a>
     </h1>
 
     {/* Desktop Menu */}
-    <ul className="hidden md:flex gap-8 text-gray-300">
-      <li>
-        <a href="#about" className="hover:text-white transition">
-          About
-        </a>
-      </li>
+<ul className="hidden md:flex gap-8 text-gray-300">
 
-      <li>
-        <a href="#skills" className="hover:text-white transition">
-          Skills
-        </a>
-      </li>
+  <li>
+    <a href="#about" className="hover:text-white transition">
+      About
+    </a>
+  </li>
 
-      <li>
-        <a href="#projects" className="hover:text-white transition">
-          Projects
-        </a>
-      </li>
+  <li>
+    <a href="#skills" className="hover:text-white transition">
+      Skills
+    </a>
+  </li>
 
-      <li>
-        <a href="#contact" className="hover:text-white transition">
-          Contact
-        </a>
-      </li>
-    </ul>
+  <li>
+    <a href="#projects" className="hover:text-white transition">
+      Projects
+    </a>
+  </li>
 
-    {/* Mobile Hamburger */}
-    <button
-      className="md:hidden text-white text-3xl"
-      onClick={() => setMenuOpen(!menuOpen)}
-    >
-      {menuOpen ? <X size={28} /> : <Menu size={28} />}
-    </button>
+  <li>
+    <a href="#experience" className="hover:text-white transition">
+      Experience
+    </a>
+  </li>
 
-  </div>
+  <li>
+    <a href="#education" className="hover:text-white transition">
+      Education
+    </a>
+  </li>
 
-  {/* Mobile Menu */}
-  {menuOpen && (
-    <ul className="md:hidden flex flex-col items-center gap-4 py-4 bg-black/90 text-white">
-      <li>
-        <a href="#about" onClick={() => setMenuOpen(false)}>
-          About
-        </a>
-      </li>
+  <li>
+    <a href="#contact" className="hover:text-white transition">
+      Contact
+    </a>
+  </li>
 
-      <li>
-        <a href="#skills" onClick={() => setMenuOpen(false)}>
-          Skills
-        </a>
-      </li>
+</ul>
 
-      <li>
-        <a href="#projects" onClick={() => setMenuOpen(false)}>
-          Projects
-        </a>
-      </li>
+{/* Mobile Hamburger */}
+<button
+  className="md:hidden text-white text-3xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <X size={28} /> : <Menu size={28} />}
+</button>
 
-      <li>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>
-          Contact
-        </a>
-      </li>
-    </ul>
-  )}
+</div>
+
+{/* Mobile Menu */}
+{menuOpen && (
+  <ul className="md:hidden flex flex-col items-center gap-4 py-4 bg-black/90 text-white">
+
+    <li>
+      <a href="#about" onClick={() => setMenuOpen(false)}>
+        About
+      </a>
+    </li>
+
+    <li>
+      <a href="#skills" onClick={() => setMenuOpen(false)}>
+        Skills
+      </a>
+    </li>
+
+    <li>
+      <a href="#projects" onClick={() => setMenuOpen(false)}>
+        Projects
+      </a>
+    </li>
+
+    <li>
+      <a href="#experience" onClick={() => setMenuOpen(false)}>
+        Experience
+      </a>
+    </li>
+
+    <li>
+      <a href="#education" onClick={() => setMenuOpen(false)}>
+        Education
+      </a>
+    </li>
+
+    <li>
+      <a href="#contact" onClick={() => setMenuOpen(false)}>
+        Contact
+      </a>
+    </li>
+
+  </ul>
+)}
 </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center text-center px-6">
-      
+<section
+  id="home"
+  className="relative h-screen flex flex-col items-center justify-center text-center px-6"
+>
       
         {/* Glow Effect */}
         <div className="absolute w-72 h-72 bg-purple-500/30 rounded-full blur-3xl"></div>
@@ -283,6 +318,12 @@ function App() {
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
               <h3 className="text-xl font-semibold">
+                C
+              </h3>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
+              <h3 className="text-xl font-semibold">
                 HTML & CSS
               </h3>
             </div>
@@ -394,9 +435,9 @@ function App() {
   </div>
   <button
     onClick={() => setShowSafeSpace(true)}
-    className="text-purple-400 font-semibold hover:text-purple-300 transition"
+    className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
   >
-    View project →
+    View details →
   </button>
   </div>
 
@@ -431,9 +472,9 @@ function App() {
               </div>
   <button
     onClick={() => setShowCarbon(true)}
-    className="text-purple-400 font-semibold hover:text-purple-300 transition"
+    className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
   >
-    View project →
+    View details →
   </button>
 
             </div>
@@ -445,11 +486,9 @@ function App() {
     Pragmatic Behaviour Analysis
   </h3>
 
-  <p className="text-gray-400 leading-relaxed mb-6">
     <p className="text-gray-400 leading-relaxed mb-6">
   AI-powered behavioural assessment platform that combines MCQ-based evaluations completed by parents or caregivers with video analysis to identify pragmatic behavioural patterns in children under 10, enabling early detection and informed intervention decisions.
 </p>
-  </p>
 
   <div className="flex flex-wrap gap-3 mb-6">
 
@@ -468,9 +507,9 @@ function App() {
   </div>
   <button
   onClick={() => setShowPragmatic(true)}
-  className="text-purple-400 font-semibold hover:text-purple-300 transition"
+  className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
 >
-  View project →
+  View details →
 </button>
 
 </div>
@@ -506,9 +545,9 @@ function App() {
               
               <button
   onClick={() => setShowArchaeological(true)}
-  className="text-purple-400 font-semibold hover:text-purple-300 transition"
+  className="text-purple-400 font-semibold hover:text-purple-300 transition inline-flex items-center gap-1"
 >
-  View project →
+  View details →
 </button>
 
             </div>
@@ -522,84 +561,218 @@ function App() {
 
 
       </section>
-            {/* Contact Section */}
-      <section id="contact" className="py-24 px-6">
 
-        <div className="max-w-4xl mx-auto text-center">
+{/* Experience Section */}
+<section id="experience" className="py-20 px-6">
 
-          <p className="text-purple-400 text-lg mb-3">
-            Contact
-          </p>
+  <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-4xl font-bold mb-6">
-            Let's Connect
-          </h2>
+    <h2 className="text-4xl font-bold mb-12 text-center">
+      Experience
+    </h2>
 
-          <p className="text-gray-400 mb-10 leading-relaxed">
-            I’m open to opportunities, collaborations, and innovative projects
-            related to AI, Machine Learning, and Web Development.
-          </p>
+    <div className="grid md:grid-cols-2 gap-8">
 
-          {/* Contact Cards */}
-          <div className="grid md:grid-cols-3 gap-6">
+      {/* Experience 1 */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
 
-            {/* Email */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500 transition">
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-2xl font-bold">
+            AI Intern
+          </h3>
 
-              <h3 className="text-xl font-semibold mb-3">
-                Email
-              </h3>
-
-              <a
-                href="mailto:yourmail@gmail.com"
-                className="text-gray-400 break-all hover:text-purple-400 transition"
-              >
-                mizam0605@gmail.com
-              </a>
-
-            </div>
-
-            {/* LinkedIn */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500 transition">
-
-              <h3 className="text-xl font-semibold mb-3">
-                LinkedIn
-              </h3>
-
-              <a
-                href="https://www.linkedin.com/in/miza-m-621b20338/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-purple-400 transition"
-              >
-                Miza M
-              </a>
-
-            </div>
-
-            {/* GitHub */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500 transition">
-
-              <h3 className="text-xl font-semibold mb-3">
-                GitHub
-              </h3>
-
-              <a
-                href="https://github.com/mizaaaaa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-purple-400 transition"
-              >
-                github.com/mizaaaaa
-              </a>
-
-            </div>
-
-          </div>
-
+          <span className="text-purple-400 text-sm">
+            Aug 2025 – Sep 2025
+          </span>
         </div>
 
-      </section>
+        <h4 className="text-lg text-purple-300 mb-4">
+          AICTE, Shell India & Edunet Foundation
+        </h4>
+
+        <ul className="text-gray-400 space-y-3 leading-relaxed">
+          <li>• Completed a 4-week AI internship focused on sustainability and green technology.</li>
+          <li>• Applied AI concepts to address environmental challenges.</li>
+          <li>• Explored machine learning approaches for sustainable development.</li>
+          <li>• Strengthened AI application development and problem-solving skills.</li>
+        </ul>
+
+      </div>
+
+      {/* Experience 2 */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-2xl font-bold">
+            AI Intern
+          </h3>
+
+          <span className="text-purple-400 text-sm">
+            Nov 2025 – Jan 2026
+          </span>
+        </div>
+
+        <h4 className="text-lg text-purple-300 mb-4">
+          Infosys Springboard
+        </h4>
+
+        <ul className="text-gray-400 space-y-3 leading-relaxed">
+          <li>• Developed AI-powered archaeological site mapping solutions.</li>
+          <li>• Implemented image segmentation and object detection models.</li>
+          <li>• Built terrain analysis and erosion prediction systems.</li>
+          <li>• Worked with satellite and drone imagery using machine learning techniques.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* Education Section */}
+<section id="education" className="py-6 px-8">
+
+  <div className="max-w-5xl mx-auto">
+
+    <h2 className="text-4xl font-bold mb-12 text-center">
+      Education
+    </h2>
+
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+
+        <div>
+          <h3 className="text-2xl font-bold mb-2">
+            B.Tech in Information Technology
+          </h3>
+
+          <h4 className="text-lg text-purple-300 mb-2">
+            LBS College of Engineering, Kasaragod
+          </h4>
+
+          <p className="text-gray-400">
+            Kasaragod, Kerala
+          </p>
+        </div>
+
+        <div>
+          <span className="text-purple-400 font-medium">
+            2022 – 2026
+          </span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* Contact Section */}
+<section id="contact" className="py-24 px-6">
+
+  <div className="max-w-5xl mx-auto text-center">
+
+    <p className="text-purple-400 text-lg mb-3">
+      Contact
+    </p>
+
+    <h2 className="text-4xl font-bold mb-6">
+      Let's Connect
+    </h2>
+
+    <p className="text-gray-400 mb-3 leading-relaxed max-w-3xl mx-auto">
+      Passionate about building impactful software and AI-powered solutions.
+Open to full-stack development, AI, and software engineering opportunities,
+as well as collaborations on innovative projects.
+    </p>
+
+    <p className="text-gray-500 text-sm mb-10">
+      Kasaragod, Kerala, India
+    </p>
+
+    {/* Contact Cards */}
+    <div className="grid md:grid-cols-3 gap-6">
+
+      {/* Email */}
+      <a
+        href="mailto:mizam0605@gmail.com"
+        className="bg-white/5 border border-white/10 rounded-2xl p-6
+                   hover:border-purple-500 hover:-translate-y-1
+                   transition-all duration-300 block"
+      >
+        <h3 className="text-xl font-semibold mb-3">
+          Email
+        </h3>
+
+        <p className="text-gray-400 hover:text-purple-400 transition break-all">
+          mizam0605@gmail.com
+        </p>
+      </a>
+
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/in/miza-m-621b20338/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white/5 border border-white/10 rounded-2xl p-6
+                   hover:border-purple-500 hover:-translate-y-1
+                   transition-all duration-300 block"
+      >
+        <h3 className="text-xl font-semibold mb-3">
+          LinkedIn
+        </h3>
+
+        <p className="text-gray-400 hover:text-purple-400 transition">
+          View LinkedIn Profile
+        </p>
+      </a>
+
+      {/* GitHub */}
+      <a
+        href="https://github.com/mizaaaaa"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white/5 border border-white/10 rounded-2xl p-6
+                   hover:border-purple-500 hover:-translate-y-1
+                   transition-all duration-300 block"
+      >
+        <h3 className="text-xl font-semibold mb-3">
+          GitHub
+        </h3>
+
+        <p className="text-gray-400 hover:text-purple-400 transition">
+          View GitHub Profile
+        </p>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* Footer */}
+<footer className="border-t border-white/10 py-8 px-6">
+
+  <div className="max-w-6xl mx-auto text-center">
+
+    <p className="text-gray-400">
+      © 2026 Miza M. All rights reserved.
+    </p>
+
+    <p className="text-gray-500 text-sm mt-2">
+      Built with React & Tailwind CSS
+    </p>
+
+  </div>
+
+</footer>
 
    {/* SafeSpace Modal */}
 {showSafeSpace && (
@@ -633,7 +806,7 @@ function App() {
 
 <div className="grid md:grid-cols-2 gap-8 mb-20">
 
-  <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
     <h3 className="text-3xl font-bold text-red-400 mb-4">
       Problem
     </h3>
@@ -742,7 +915,7 @@ function App() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-          <div className="className=bg-white/5 border border-white/10 rounded-2xl p-3">
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-3">
             <img
               src={adminLoginImg}
               alt="Admin Login"
@@ -922,7 +1095,6 @@ function App() {
             Solution
           </h3>
 
-          <p className="text-gray-400 leading-relaxed">
             <p className="text-gray-400 leading-relaxed">
   Carbon Footprint Tracker helps users monitor and reduce their
   environmental impact by tracking carbon emissions from energy,
@@ -930,7 +1102,6 @@ function App() {
   analytics, AI-driven insights, community engagement, and
   environmental challenges.
 </p>
-          </p>
         </div>
 
       </div>
@@ -1377,14 +1548,12 @@ function App() {
             Problem
           </h3>
 
-          <p className="text-gray-400 leading-relaxed">
              <p className="text-gray-400 leading-relaxed">
   Identifying pragmatic behavioural difficulties in children under
   10 often relies on manual observations and subjective evaluations,
   making early detection of communication and social interaction
   challenges difficult.
 </p>
-          </p>
         </div>
 
         <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
@@ -1393,12 +1562,10 @@ function App() {
           </h3>
 
           <p className="text-gray-400 leading-relaxed">
-            <p className="text-gray-400 leading-relaxed">
   EARLYMIND AI combines MCQ-based caregiver assessments with
   AI-powered video analysis to identify pragmatic behavioural
   patterns, generate developmental insights, and support early
   intervention in children under 10.
-</p>
           </p>
         </div>
 
