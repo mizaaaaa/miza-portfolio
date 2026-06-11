@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import resumePdf from "./assets/resume/Miza_M_Resume.pdf";
 import welcomeImg from "./assets/projects/welcome.png";
 import reportSubmissionImg from "./assets/projects/report-submission.png";
 import myReportsImg from "./assets/projects/my-reports.png";
@@ -10,9 +11,33 @@ import adminDashboardImg from "./assets/projects/admin-dashboard.png";
 import adminLoginImg from "./assets/projects/admin-login.png";
 import counsellorLoginImg from "./assets/projects/counsellor-login.png";
 import counsellorViewImg from "./assets/projects/counsellor-view.png";
+import cfcwelcome from "./assets/projects/cfcwelcome.png";
+import cfcdashboard from "./assets/projects/cfcdashboard.png";
+import cfcenergy1 from "./assets/projects/cfcenergy1.png";
+import cfctravel1 from "./assets/projects/cfctravel1.png";
+import cfcwaste from "./assets/projects/cfcwaste.png";
+import cfccommunity3 from "./assets/projects/cfccommunity3.png";
+import cfccommunity4 from "./assets/projects/cfccommunity4.png";
+import cfcchallenges1 from "./assets/projects/cfcchallenges1.png";
+import cfcchallenges2 from "./assets/projects/cfcchallenges2.png";
+import cfcreport2 from "./assets/projects/cfcreport2.png";
+import cfcreport4 from "./assets/projects/cfcreport4.png";
+import archealogical1 from "./assets/projects/archaelogical1.png";
+import archealogical2 from "./assets/projects/archaelogical2.png";
+import earlymindregister from "./assets/projects/earlymindregister.png";
+import earlymindlogin from "./assets/projects/earlymindlogin.png";
+import earlyminddashboard from "./assets/projects/earlyminddashboard.png";
+import earlymindmcq from "./assets/projects/earlymindmcq.png";
+import earlymindmcq1 from "./assets/projects/earlymindmcq1.png";
+import earlymindvideoanalysisreport1 from "./assets/projects/earlymindvideoanalysisreport1.png";
+import earlymindvideoanalysisreport2 from "./assets/projects/earlymindvideoanalysisreport2.png";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showSafeSpace, setShowSafeSpace] = useState(false);
+  const [showCarbon, setShowCarbon] = useState(false);
+  const [showArchaeological, setShowArchaeological] = useState(false);
+  const [showPragmatic, setShowPragmatic] = useState(false);
+  
   return (
     <div className="bg-black text-white min-h-screen overflow-hidden">
 
@@ -123,14 +148,21 @@ function App() {
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mt-10">
 
-            <button className="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-xl font-semibold transition">
-              View Projects
-            </button>
+            <a
+  href="#projects"
+  className="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-xl font-semibold transition"
+>
+  View Projects
+</a>
 
-            <button className="border border-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition">
-              Download Resume
-            </button>
-
+          <a
+  href={resumePdf}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="border border-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition"
+>
+  View Resume
+</a>
           </div>
 
         </div>
@@ -327,97 +359,7 @@ function App() {
 
           {/* Project Cards */}
           <div className="grid md:grid-cols-2 gap-8">
-
-            {/* Project 1 */}
-<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
-  <h3 className="text-2xl font-bold mb-4">
-    Pragmatic Behaviour Analysis
-  </h3>
-
-  <p className="text-gray-400 leading-relaxed mb-6">
-    AI/ML-based system for early behavior analysis in children
-    using real-time video analysis and caretaker responses.
-  </p>
-
-  <div className="flex flex-wrap gap-3">
-
-    <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-      AI/ML
-    </span>
-
-    <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-      Python
-    </span>
-
-    <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-      Computer Vision
-    </span>
-
-  </div>
-
-</div>
-
-            {/* Project 2 */}
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
-              <h3 className="text-2xl font-bold mb-4">
-                Carbon Footprint Tracker
-              </h3>
-
-              <p className="text-gray-400 leading-relaxed mb-6">
-                Full-stack web platform to track and reduce carbon footprint
-                through analytics on energy, transportation, and waste.
-              </p>
-
-              <div className="flex flex-wrap gap-3">
-
-                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-                  HTML/CSS
-                </span>
-
-                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-                  MySQL
-                </span>
-
-                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-                  Flask
-                </span>
-
-              </div>
-
-            </div>
-
-            {/* Project 3 */}
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-
-              <h3 className="text-2xl font-bold mb-4">
-                AI-Powered Archaeological Site Mapping
-              </h3>
-
-              <p className="text-gray-400 leading-relaxed mb-6">
-                AI-based system using satellite and drone imagery for
-                archaeological insights, segmentation, and erosion prediction.
-              </p>
-
-              <div className="flex flex-wrap gap-3">
-
-                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-                  Python
-                </span>
-
-                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-                  AI/ML
-                </span>
-
-                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-                  YOLOv5
-                </span>
-
-              </div>
-
-            </div>
-            {/* Project 4 - SafeSpace */}
+             {/* Project 1 - SafeSpace */}
 <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition duration-300">
 
   <h3 className="text-2xl font-bold mb-4">
@@ -446,23 +388,137 @@ function App() {
     </span>
 
     <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
-      MongoDB
+      MySQL
     </span>
 
   </div>
-
   <button
     onClick={() => setShowSafeSpace(true)}
     className="text-purple-400 font-semibold hover:text-purple-300 transition"
   >
     View project →
   </button>
+  </div>
+
+   {/* Project 2 */}
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+
+              <h3 className="text-2xl font-bold mb-4">
+                Carbon Footprint Tracker
+              </h3>
+
+              <p className="text-gray-400 leading-relaxed mb-6">
+                
+                Full-stack sustainability platform that helps users monitor and reduce carbon emissions through energy, travel, and waste tracking, AI-powered insights, community engagement, and environmental analytics.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+
+              
+
+                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+                  HTML/CSS
+                </span>
+
+                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+                  MySQL
+                </span>
+
+                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+                  Flask
+                </span>
+                
+
+              </div>
+  <button
+    onClick={() => setShowCarbon(true)}
+    className="text-purple-400 font-semibold hover:text-purple-300 transition"
+  >
+    View project →
+  </button>
+
+            </div>
+
+            {/* Project 3 */}
+<div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+
+  <h3 className="text-2xl font-bold mb-4">
+    Pragmatic Behaviour Analysis
+  </h3>
+
+  <p className="text-gray-400 leading-relaxed mb-6">
+    <p className="text-gray-400 leading-relaxed mb-6">
+  AI-powered behavioural assessment platform that combines MCQ-based evaluations completed by parents or caregivers with video analysis to identify pragmatic behavioural patterns in children under 10, enabling early detection and informed intervention decisions.
+</p>
+  </p>
+
+  <div className="flex flex-wrap gap-3 mb-6">
+
+    <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+      AI/ML
+    </span>
+
+    <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+      Python
+    </span>
+
+    <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+      Computer Vision
+    </span>
+
+  </div>
+  <button
+  onClick={() => setShowPragmatic(true)}
+  className="text-purple-400 font-semibold hover:text-purple-300 transition"
+>
+  View project →
+</button>
+
+</div>
+
+           
+
+            {/* Project 4 */}
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+
+              <h3 className="text-2xl font-bold mb-4">
+                AI-Powered Archaeological Site Mapping
+              </h3>
+
+              <p className="text-gray-400 leading-relaxed mb-6">
+                AI-powered platform that utilizes satellite and drone imagery to identify potential archaeological sites through image segmentation, object detection, terrain analysis, and erosion risk assessment, supporting heritage preservation and archaeological research.
+              </p>
+
+              <div className="flex flex-wrap gap-3 mb-6">
+
+                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+                  Python
+                </span>
+
+                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+                  AI/ML
+                </span>
+
+                <span className="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">
+                  YOLOv5
+                </span>
+
+              </div>
+              
+              <button
+  onClick={() => setShowArchaeological(true)}
+  className="text-purple-400 font-semibold hover:text-purple-300 transition"
+>
+  View project →
+</button>
+
+            </div>
+           
+
+  
 
 </div>
 
 </div>
-
-          </div>
 
 
       </section>
@@ -545,26 +601,31 @@ function App() {
 
       </section>
 
-      {/* SafeSpace Modal */}
+   {/* SafeSpace Modal */}
 {showSafeSpace && (
   <div
-  className="fixed inset-0 bg-black z-50 overflow-y-auto backdrop-blur-sm"
+    className="fixed inset-0 bg-black z-50 overflow-y-auto backdrop-blur-sm"
+    onClick={() => setShowSafeSpace(false)}
+  >
 
-  onClick={() => setShowSafeSpace(false)}
->
+    {/* Sticky Close Button */}
+    <div
+      className="sticky top-4 z-[99999] flex justify-end px-4"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        onClick={() => setShowSafeSpace(false)}
+        className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xl hover:bg-white/20 transition"
+      >
+        ✕
+      </button>
+    </div>
 
     <div
-  className="max-w-7xl mx-auto p-8 relative bg-black min-h-screen"
-  onClick={(e) => e.stopPropagation()}
->
-  <button
-  onClick={() => setShowSafeSpace(false)}
-  className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition text-xl"
->
-  ✕
-</button>
-
-      
+      className="max-w-7xl mx-auto p-8 relative bg-black min-h-screen"
+      onClick={(e) => e.stopPropagation()}
+    >
+ 
 
       <h2 className="text-5xl font-bold mb-4">
   SafeSpace
@@ -806,12 +867,709 @@ function App() {
         </div>
 
       </div>
+     
+    </div>
+
+  </div>
+)}
+
+
+{/* Carbon Modal */}
+{showCarbon && (
+  <div
+    className="fixed inset-0 bg-black z-50 overflow-y-auto backdrop-blur-sm"
+    onClick={() => setShowCarbon(false)}
+  >
+
+    {/* Sticky Close Button */}
+    <div
+      className="sticky top-4 z-[99999] flex justify-end px-4"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        onClick={() => setShowCarbon(false)}
+        className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xl hover:bg-white/20 transition"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div
+      className="max-w-7xl mx-auto p-8 relative bg-black min-h-screen"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      <h2 className="text-5xl font-bold mb-4">
+        Carbon Footprint Tracker
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-20">
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-3xl font-bold text-red-400 mb-4">
+            Problem
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            People often struggle to understand how their daily
+            activities impact the environment and lack tools to
+            track and reduce carbon emissions.
+          </p>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-3xl font-bold text-green-400 mb-4">
+            Solution
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
+  Carbon Footprint Tracker helps users monitor and reduce their
+  environmental impact by tracking carbon emissions from energy,
+  travel, and waste activities while providing sustainability
+  analytics, AI-driven insights, community engagement, and
+  environmental challenges.
+</p>
+          </p>
+        </div>
+
+      </div>
+
+      {/* Dashboard Module */}
+      <div className="mb-20">
+
+        <h3 className="text-3xl font-bold mb-4">
+          Dashboard Module
+        </h3>
+
+        <p className="text-gray-400 mb-8">
+          Provides centralized access to all sustainability
+          tracking features.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
+           <img
+  src={cfcwelcome}
+  alt="Welcome"
+  className="w-4/5 mx-auto rounded-xl mb-6"
+/>
+
+            <h4 className="font-semibold text-center mb-2">
+              Welcome Screen
+            </h4>
+
+            <p className="text-gray-400 text-base text-center leading-relaxed px-4">
+  Landing page introducing users to the Carbon Footprint Tracker platform and providing access to sustainability monitoring features.
+</p>
+          </div>
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
+            <img
+  src={cfcdashboard}
+  alt="Dashboard"
+  className="w-4/5 mx-auto rounded-xl mb-6"
+/>
+
+            <h4 className="font-semibold text-center mb-2">
+              Main Dashboard
+            </h4>
+
+            <p className="text-gray-400 text-base text-center leading-relaxed px-4">
+  Central dashboard connecting energy, travel, waste, reporting, community, and challenge modules through a unified interface.
+</p>
+          </div>
+
+        </div>
+
+      </div>
+{/* Calculator Modules */}
+<div className="mb-20">
+
+  <h3 className="text-3xl font-bold mb-4">
+    Carbon Calculation Modules
+  </h3>
+
+  <p className="text-gray-400 mb-8">
+    The platform provides dedicated calculators for energy,
+    travel, and waste activities to accurately measure
+    carbon emissions.
+  </p>
+
+  <div className="grid md:grid-cols-3 gap-6">
+
+    {/* Energy */}
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+      <img
+        src={cfcenergy1}
+        alt="Energy Calculator"
+        className="w-full rounded-xl mb-4"
+      />
+
+      <h4 className="text-xl font-semibold text-center mb-3">
+        Energy Calculator
+      </h4>
+
+      <p className="text-gray-400 text-sm text-center leading-relaxed">
+        Calculates emissions generated from household
+        appliances, lighting systems, cooling devices,
+        and daily electricity consumption.
+      </p>
+
+    </div>
+
+    {/* Travel */}
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+      <img
+        src={cfctravel1}
+        alt="Travel Calculator"
+        className="w-full rounded-xl mb-4"
+      />
+
+      <h4 className="text-xl font-semibold text-center mb-3">
+        Travel Calculator
+      </h4>
+
+      <p className="text-gray-400 text-sm text-center leading-relaxed">
+        Measures emissions from private vehicles,
+        public transportation, and daily travel
+        activities to encourage sustainable mobility.
+      </p>
+
+    </div>
+
+    {/* Waste */}
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+      <img
+        src={cfcwaste}
+        alt="Waste Calculator"
+        className="w-full rounded-xl mb-4"
+      />
+
+      <h4 className="text-xl font-semibold text-center mb-3">
+        Waste Calculator
+      </h4>
+
+      <p className="text-gray-400 text-sm text-center leading-relaxed">
+        Tracks carbon emissions generated through waste
+        disposal and helps users adopt responsible
+        waste management practices.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+{/*report& analytics */}
+
+      <div className="mt-24 mb-20">
+        
+      <h3 className="text-3xl font-bold mb-4">
+  Reports & Analytics
+</h3>
+
+<p className="text-gray-400 mb-8">
+  The reporting module provides detailed insights into users' carbon emissions through activity breakdowns, visual analytics, and personalized sustainability recommendations.
+</p>
+
+<div className="grid md:grid-cols-2 gap-6">
+
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+    <img
+      src={cfcreport2}
+      alt="Emission Report"
+      className="w-4/5 mx-auto rounded-xl mb-6"
+    />
+
+    <h4 className="text-xl font-semibold text-center mb-3">
+      Emission Breakdown Report
+    </h4>
+
+    <p className="text-gray-400 text-sm text-center leading-relaxed">
+      Displays detailed carbon emissions categorized by energy, travel, and waste activities, helping users identify major emission sources.
+    </p>
+
+  </div>
+
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+    <img
+      src={cfcreport4}
+      alt="Analytics & Recommendations"
+      className="w-4/5 mx-auto rounded-xl mb-6"
+    />
+
+    <h4 className="text-xl font-semibold text-center mb-3">
+      Analytics & AI Recommendations
+    </h4>
+
+    <p className="text-gray-400 text-sm text-center leading-relaxed">
+      Visual charts and AI-powered recommendations provide actionable insights to reduce carbon emissions and improve sustainability practices.
+    </p>
+
+  </div>
+
+</div>
+
+  </div>
+
+{/* Community Engagement & Sustainability Challenges */}
+<div className="mb-20">
+
+
+  <h3 className="text-3xl font-bold mb-4">
+  Community Engagement & Sustainability Challenges
+</h3>
+
+<p className="text-gray-400 mb-8">
+  The platform encourages environmental awareness through community
+  participation, sustainability initiatives, leaderboards, and carbon
+  reduction challenges that motivate users to adopt eco-friendly habits.
+</p>
+
+{/* Community Module */}
+<div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
+
+  <div className="grid md:grid-cols-2 gap-4 mb-6">
+
+    <img
+      src={cfccommunity3}
+      alt="Community Hub"
+      className="rounded-xl"
+    />
+
+    <img
+      src={cfccommunity4}
+      alt="Community Rankings"
+      className="rounded-xl"
+    />
+
+  </div>
+
+  <h4 className="text-xl font-semibold text-center mb-3">
+    Community Participation & Leaderboards
+  </h4>
+
+  <p className="text-gray-400 text-sm text-center leading-relaxed max-w-4xl mx-auto">
+    The community module enables users to participate in sustainability
+    initiatives, collaborate with other members, track community
+    statistics, and view leaderboards that encourage environmentally
+    responsible behavior through healthy competition.
+  </p>
+
+</div>
+
+{/* Challenges Module */}
+<div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+  <div className="grid md:grid-cols-2 gap-4 mb-6">
+
+    <img
+      src={cfcchallenges1}
+      alt="Carbon Challenges"
+      className="rounded-xl"
+    />
+
+    <img
+      src={cfcchallenges2}
+      alt="Challenge Progress"
+      className="rounded-xl"
+    />
+
+  </div>
+
+  <h4 className="text-xl font-semibold text-center mb-3">
+    Sustainability Challenges & Rewards
+  </h4>
+
+  <p className="text-gray-400 text-sm text-center leading-relaxed max-w-4xl mx-auto">
+    Users can participate in carbon reduction challenges, earn points,
+    unlock achievements, monitor progress, and reach sustainability
+    milestones. The reward system encourages long-term engagement and
+    adoption of eco-friendly habits.
+  </p>
+
+</div>
+
+</div>
+  </div>
+  </div>
+)}
+
+{/* Archaeological Site Mapping Modal */}
+{showArchaeological && (
+  <div
+    className="fixed inset-0 bg-black z-50 overflow-y-auto backdrop-blur-sm"
+    onClick={() => setShowArchaeological(false)}
+  >
+
+    {/* Sticky Close Button */}
+    <div
+      className="sticky top-4 z-[99999] flex justify-end px-4"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        onClick={() => setShowArchaeological(false)}
+        className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xl hover:bg-white/20 transition"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div
+      className="max-w-7xl mx-auto p-8 relative bg-black min-h-screen"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      <h2 className="text-5xl font-bold mb-4">
+        AI-Powered Archaeological Site Mapping
+      </h2>
+
+      {/* Problem & Solution */}
+      <div className="grid md:grid-cols-2 gap-8 mb-20">
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-3xl font-bold text-red-400 mb-4">
+            Problem
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            Archaeological site discovery and monitoring often require
+            extensive field surveys and manual analysis, making the
+            process time-consuming, costly, and difficult across
+            large geographical regions.
+          </p>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-3xl font-bold text-green-400 mb-4">
+            Solution
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            The platform utilizes satellite and drone imagery combined
+            with AI-driven image segmentation, object detection, and
+            terrain analysis to identify potential archaeological
+            structures and support heritage preservation efforts.
+          </p>
+        </div>
+
+      </div>
+
+      {/* Image Upload & Data Input */}
+      <div className="mb-20">
+
+        <h3 className="text-3xl font-bold mb-4">
+          Image Upload & Data Input
+        </h3>
+
+        <p className="text-gray-400 mb-8">
+          Users can upload satellite or drone imagery through a
+          streamlined interface. The uploaded image is validated
+          and prepared for AI-powered archaeological analysis.
+        </p>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+          <img
+            src={archealogical1}
+            alt="Image Upload Interface"
+            className="w-4/5 mx-auto rounded-xl mb-6"
+          />
+
+          <h4 className="text-xl font-semibold text-center mb-3">
+            Image Upload Interface
+          </h4>
+
+          <p className="text-gray-400 text-sm text-center leading-relaxed max-w-3xl mx-auto">
+            Supports satellite and drone imagery uploads, providing
+            a simple entry point for archaeological site detection,
+            terrain evaluation, and environmental assessment.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* AI Analysis Results */}
+      <div className="mb-20">
+
+        <h3 className="text-3xl font-bold mb-4">
+          AI Analysis Results
+        </h3>
+
+        <p className="text-gray-400 mb-8">
+          Multiple AI models work together to identify archaeological
+          structures, segment terrain features, and assess
+          environmental conditions.
+        </p>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+          <img
+            src={archealogical2}
+            alt="AI Analysis Results"
+            className="w-4/5 mx-auto rounded-xl mb-6"
+          />
+
+          <h4 className="text-xl font-semibold text-center mb-3">
+            Segmentation, Detection & Terrain Assessment
+          </h4>
+
+          <p className="text-gray-400 text-sm text-center leading-relaxed max-w-3xl mx-auto">
+            U-Net segmentation highlights terrain and land features,
+            YOLO object detection identifies potential archaeological
+            structures, while terrain analysis evaluates vegetation
+            coverage, slope characteristics, and erosion risk
+            indicators to support heritage conservation.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
 )}
 
+{/* Pragmatic Behaviour Analysis Modal */}
+{showPragmatic && (
+  <div
+    className="fixed inset-0 bg-black z-50 overflow-y-auto backdrop-blur-sm"
+    onClick={() => setShowPragmatic(false)}
+  >
+
+    {/* Close Button */}
+    <div
+      className="sticky top-4 z-[99999] flex justify-end px-4"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        onClick={() => setShowPragmatic(false)}
+        className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xl hover:bg-white/20 transition"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div
+      className="max-w-7xl mx-auto p-8 relative bg-black min-h-screen"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      <h2 className="text-5xl font-bold mb-4">
+        Pragmatic Behaviour Analysis
+      </h2>
+
+      {/* Problem & Solution */}
+      <div className="grid md:grid-cols-2 gap-8 mb-20">
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h3 className="text-3xl font-bold text-red-400 mb-4">
+            Problem
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+             <p className="text-gray-400 leading-relaxed">
+  Identifying pragmatic behavioural difficulties in children under
+  10 often relies on manual observations and subjective evaluations,
+  making early detection of communication and social interaction
+  challenges difficult.
+</p>
+          </p>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-3xl font-bold text-green-400 mb-4">
+            Solution
+          </h3>
+
+          <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
+  EARLYMIND AI combines MCQ-based caregiver assessments with
+  AI-powered video analysis to identify pragmatic behavioural
+  patterns, generate developmental insights, and support early
+  intervention in children under 10.
+</p>
+          </p>
+        </div>
+
+      </div>
+
+      
+      {/* Authentication & Dashboard */}
+<div className="mb-20">
+
+  <h3 className="text-3xl font-bold mb-4">
+    Authentication & Dashboard
+  </h3>
+
+  <p className="text-gray-400 mb-8">
+    Secure authentication and dashboard management allow parents and
+    caregivers to access behavioural assessment tools, manage
+    evaluations, and review analysis results through a centralized
+    platform.
+  </p>
+
+  {/* Registration */}
+<div className="bg-white/5 border border-white/10 rounded-2xl p-4 mb-8 max-w-3xl mx-auto">
+
+  <img
+    src={earlymindregister}
+    alt="User Registration"
+    className="w-2/5 mx-auto rounded-xl mb-4"
+  />
+
+  <h4 className="text-lg font-semibold text-center mb-2">
+    User Registration
+  </h4>
+
+  <p className="text-gray-400 text-sm text-center leading-relaxed max-w-2xl mx-auto">
+    Parents and caregivers can create accounts by providing child
+    and guardian information required for behavioural assessments,
+    report generation, and personalized analysis.
+  </p>
+
+</div>
+
+{/* Login + Dashboard */}
+<div className="bg-white/5 border border-white/10 rounded-2xl p-4 max-w-5xl mx-auto">
+
+  <div className="grid md:grid-cols-2 gap-4 mb-4">
+
+    <img
+      src={earlymindlogin}
+      alt="Secure Login"
+      className="rounded-xl"
+    />
+
+    <img
+      src={earlyminddashboard}
+      alt="Assessment Dashboard"
+      className="rounded-xl"
+    />
+
+  </div>
+
+  <h4 className="text-lg font-semibold text-center mb-2">
+    Secure Login & Assessment Dashboard
+  </h4>
+
+  <p className="text-gray-400 text-sm text-center leading-relaxed max-w-3xl mx-auto">
+    Registered users can securely access the platform and manage
+    behavioural assessments through a centralized dashboard. The
+    dashboard provides quick access to MCQ-based evaluations,
+    AI-powered video analysis, assessment reports, and behavioural
+    insights from a single interface.
+  </p>
+
+</div>
+</div>
+
+      {/* Questionnaire Assessment */}
+<div className="mb-20">
+
+  <h3 className="text-3xl font-bold mb-4">
+    Questionnaire-Based Behaviour Assessment
+  </h3>
+
+  <p className="text-gray-400 mb-8">
+    Structured MCQ-based questionnaires completed by parents and
+    caregivers help assess communication, social interaction,
+    and pragmatic behavioural characteristics in children.
+  </p>
+
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-4 max-w-5xl mx-auto">
+
+    <div className="grid md:grid-cols-2 gap-4 mb-4">
+
+      <img
+        src={earlymindmcq}
+        alt="MCQ Assessment"
+        className="rounded-xl"
+      />
+
+      <img
+        src={earlymindmcq1}
+        alt="Assessment Result"
+        className="rounded-xl"
+      />
+
+    </div>
+
+    <h4 className="text-lg font-semibold text-center mb-2">
+      Questionnaire Analysis & Results
+    </h4>
+
+    <p className="text-gray-400 text-sm text-center leading-relaxed max-w-3xl mx-auto">
+      The system analyzes parent and caregiver responses, calculates
+      assessment scores, evaluates behavioural indicators, and generates
+      developmental insights along with personalized recommendations
+      for early intervention.
+    </p>
+
+  </div>
+
+</div>
+
+{/* AI Video Behaviour Analysis */}
+<div className="mb-20">
+
+  <h3 className="text-3xl font-bold mb-4">
+    AI Video Behaviour Analysis
+  </h3>
+
+  <p className="text-gray-400 mb-8">
+    AI-powered video analysis evaluates behavioural patterns and
+    social interactions to identify pragmatic behavioural traits
+    and generate prediction-based assessment reports.
+  </p>
+
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-4 max-w-5xl mx-auto">
+
+    <div className="grid md:grid-cols-2 gap-4 mb-4">
+
+      <img
+        src={earlymindvideoanalysisreport1}
+        alt="Normal Behaviour"
+        className="rounded-xl"
+      />
+
+      <img
+        src={earlymindvideoanalysisreport2}
+        alt="Behaviour Prediction"
+        className="rounded-xl"
+      />
+
+    </div>
+
+    <h4 className="text-lg font-semibold text-center mb-2">
+      Behaviour Prediction Reports
+    </h4>
+
+    <p className="text-gray-400 text-sm text-center leading-relaxed max-w-3xl mx-auto">
+      The AI model evaluates eye contact, eye-hand coordination,
+      joint attention, turn-taking, understanding social cues,
+      topic maintenance, and topic initiation to generate detailed
+      behavioural predictions and assessment reports.
+    </p>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+)}
     </div>
   )
 }
