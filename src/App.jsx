@@ -163,7 +163,7 @@ function App() {
   <div className="absolute left-0 top-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
   <div className="absolute right-20 top-40 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
 
-  <div className="relative z-10 max-w-5xl mx-auto grid md:grid-cols-2 gap-4 items-center">
+  <div className="relative z-10 max-w-5xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-4 items-center">
     {/* Left Side */}
     <div className="order-2 md:order-1 text-center md:text-left">
 
