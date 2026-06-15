@@ -165,7 +165,7 @@ function App() {
 
   <div className="relative z-10 max-w-5xl mx-auto grid md:grid-cols-2 gap-4 items-center">
     {/* Left Side */}
-    <div className="text-center md:text-left">
+    <div className="order-2 md:order-1 text-center md:text-left">
 
       <p className="text-purple-400 uppercase tracking-[6px] mb-4 text-sm">
         Hello, I'm
@@ -209,7 +209,7 @@ function App() {
     </div>
 
     {/* Right Side */}
-    <div className="flex justify-center">
+    <div className="order-1 md:order-2 flex justify-center mb-10 md:mb-0">
 
       <div className="relative">
 
@@ -218,14 +218,13 @@ function App() {
 
         {/* Organic Shape */}
         <div
-          className="relative w-64 h-80 md:w-64 md:h-[320px]
-overflow-hidden
-border border-purple-500/20
-shadow-[0_0_20px_rgba(168,85,247,0.12)]
-rounded-[70px]
-transition duration-300 hover:scale-105"
-        >
-
+  className="relative w-56 h-72 md:w-64 md:h-[320px]
+  overflow-hidden
+  border border-purple-500/20
+  shadow-[0_0_20px_rgba(168,85,247,0.12)]
+  rounded-[70px]
+  transition duration-300 hover:scale-105"
+>
           <img
             src={profilePhoto}
             alt="Miza M"
