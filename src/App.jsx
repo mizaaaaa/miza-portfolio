@@ -44,7 +44,7 @@ function App() {
 
       {/* Navbar */}
 <nav className="fixed top-0 w-full backdrop-blur-md bg-black/30 border-b border-white/10 z-50">
-  <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+  <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
     <h1 className="text-2xl font-bold text-purple-400">
       <a
@@ -156,14 +156,14 @@ function App() {
       {/* Hero Section */}
 <section
   id="home"
-  className="relative min-h-screen flex items-center pt-20 px-6"
+  className="relative py-20 md:py-28 px-6"
 >
 
   {/* Background Glow */}
   <div className="absolute left-0 top-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
   <div className="absolute right-20 top-40 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
 
-  <div className="relative z-10 max-w-5xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-4 items-center">
+  <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
     {/* Left Side */}
     <div className="order-2 md:order-1 text-center md:text-left">
 
@@ -171,7 +171,7 @@ function App() {
         Hello, I'm
       </p>
 
-      <h1 className="text-6xl md:text-8xl font-bold mb-3">
+      <h1 className="text-6xl md:text-7xl font-bold mb-3">
         Miza M
       </h1>
 
@@ -179,7 +179,7 @@ function App() {
         AI & Full Stack Developer
       </p>
 
-      <p className="max-w-md text-gray-300 text-lg leading-relaxed md:mx-0 mx-auto">
+<p className="max-w-lg text-gray-300 text-lg leading-relaxed md:mx-0 mx-auto">
         Passionate about Full Stack Development, Mobile App Development,
         and AI-powered solutions. Experienced in building scalable
         applications, intelligent systems, and user-focused software
@@ -218,7 +218,7 @@ function App() {
 
         {/* Organic Shape */}
         <div
-  className="relative w-56 h-72 md:w-64 md:h-[320px]
+ className="relative w-56 h-72 md:w-64 md:h-[340px]
   overflow-hidden
   border border-purple-500/20
   shadow-[0_0_20px_rgba(168,85,247,0.12)]
@@ -244,7 +244,7 @@ function App() {
 
 
             {/* About Section */}
-<section id="about" className="py-24 px-6">
+<section id="about" className="pt-6 pb-16 px-6">
 
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
@@ -422,7 +422,7 @@ function App() {
       </section>
 
             {/* Projects Section */}
-        <section id="projects" className="py-24 px-6">
+        <section id="projects" className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
 
           {/* Heading */}
@@ -600,7 +600,7 @@ function App() {
       </section>
 
 {/* Experience Section */}
-<section id="experience" className="py-20 px-6">
+<section id="experience" className="py-16 px-6">
 
   <div className="max-w-6xl mx-auto">
 
@@ -667,7 +667,7 @@ function App() {
 </section>
 
 {/* Education Section */}
-<section id="education" className="py-12 px-8">
+<section id="education" className="py-12 px-6">
 
   <div className="max-w-5xl mx-auto">
 
@@ -710,7 +710,7 @@ function App() {
 </section>
 
 {/* Contact Section */}
-<section id="contact" className="py-24 px-6">
+<section id="contact" className="py-16 px-6">
 
   <div className="max-w-5xl mx-auto text-center">
 
