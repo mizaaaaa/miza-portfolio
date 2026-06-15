@@ -31,6 +31,7 @@ import earlymindmcq from "./assets/projects/earlymindmcq.png";
 import earlymindmcq1 from "./assets/projects/earlymindmcq1.png";
 import earlymindvideoanalysisreport1 from "./assets/projects/earlymindvideoanalysisreport1.png";
 import earlymindvideoanalysisreport2 from "./assets/projects/earlymindvideoanalysisreport2.png";
+import profilePhoto from "./assets/profilePhoto.jpg";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showSafeSpace, setShowSafeSpace] = useState(false);
@@ -148,60 +149,101 @@ function App() {
   </ul>
 )}
 </nav>
-
-      {/* Hero Section */}
-<section
-  id="home"
-  className="relative h-screen flex flex-col items-center justify-center text-center px-6"
->
       
         {/* Glow Effect */}
         <div className="absolute w-72 h-72 bg-purple-500/30 rounded-full blur-3xl"></div>
 
-        {/* Content */}
-        <div className="relative z-10">
-
-          <p className="text-purple-400 mb-4 text-lg">
-            Hello, I'm
-          </p>
-
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            Miza M
-          </h1>
-
-          <h2 className="text-2xl md:text-3xl text-gray-400 mb-6">
-            AI & Full Stack Developer
-          </h2>
-
-          <p className="max-w-2xl text-gray-300 text-lg leading-relaxed">
- Passionate about Full Stack Development and AI-powered solutions.
-Experienced in building scalable web applications, intelligent systems,
-and user-focused software that solve real-world problems.
-</p>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mt-10">
-
-            <a
-  href="#projects"
-  className="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-xl font-semibold transition"
+      {/* Hero Section */}
+<section
+  id="home"
+  className="relative min-h-screen flex items-center pt-20 px-6"
 >
-  View Projects
-</a>
 
-          <a
-  href={resumePdf}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="border border-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition"
->
-  View Resume
-</a>
-          </div>
+  {/* Background Glow */}
+  <div className="absolute left-0 top-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
+  <div className="absolute right-20 top-40 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+  <div className="relative z-10 max-w-5xl mx-auto grid md:grid-cols-2 gap-4 items-center">
+    {/* Left Side */}
+    <div className="text-center md:text-left">
+
+      <p className="text-purple-400 uppercase tracking-[6px] mb-4 text-sm">
+        Hello, I'm
+      </p>
+
+      <h1 className="text-6xl md:text-8xl font-bold mb-3">
+        Miza M
+      </h1>
+
+      <p className="text-xl text-gray-400 mb-8">
+        AI & Full Stack Developer
+      </p>
+
+      <p className="max-w-md text-gray-300 text-lg leading-relaxed md:mx-0 mx-auto">
+        Passionate about Full Stack Development, Mobile App Development,
+        and AI-powered solutions. Experienced in building scalable
+        applications, intelligent systems, and user-focused software
+        that solve real-world problems.
+      </p>
+
+      <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-10">
+
+        <a
+          href="#projects"
+          className="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-xl font-semibold transition"
+        >
+          View Projects
+        </a>
+
+        <a
+          href={resumePdf}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition"
+        >
+          View Resume
+        </a>
+
+      </div>
+
+    </div>
+
+    {/* Right Side */}
+    <div className="flex justify-center">
+
+      <div className="relative">
+
+        {/* Glow */}
+        <div className="absolute inset-0 bg-purple-500/15 blur-3xl"></div>
+
+        {/* Organic Shape */}
+        <div
+          className="relative w-64 h-80 md:w-64 md:h-[320px]
+overflow-hidden
+border border-purple-500/20
+shadow-[0_0_20px_rgba(168,85,247,0.12)]
+rounded-[70px]
+transition duration-300 hover:scale-105"
+        >
+
+          <img
+            src={profilePhoto}
+            alt="Miza M"
+            className="w-full h-full object-cover object-top"
+            
+          />
 
         </div>
 
-      </section>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
             {/* About Section */}
 <section id="about" className="py-24 px-6">
 
