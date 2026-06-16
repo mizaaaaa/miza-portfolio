@@ -188,7 +188,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       {/* Hero Section */}
 <section
   id="home"
-  className="relative pt-50 pb-28 px-6"
+  className="relative pt-50 pb-8 lg:pb-28 px-6"
 >
 
 
@@ -242,8 +242,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
     </div>
 
     {/* Right Side */}
-    <div className="order-1 md:order-2 flex justify-center mb-10 md:mb-0">
-
+<div className="order-1 md:order-2 flex justify-center mb-4 md:mb-0">
       <div className="relative">
 
         {/* Glow */}
