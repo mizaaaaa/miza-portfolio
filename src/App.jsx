@@ -49,7 +49,7 @@ function App() {
     <div
       className="
       flex justify-between items-center
-      px-8 py-6
+      px-8 py-4
       rounded-full
       bg-[#12071f]/90
 border border-purple-500/30
@@ -130,7 +130,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
         className="
         flex flex-col items-center
         gap-5
-        py-6
+        py-4
         rounded-3xl
         bg-black/95
         backdrop-blur-md
