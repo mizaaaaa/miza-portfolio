@@ -278,7 +278,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 
           {/* About Section */}
-<section id="about" className="pt-10 pb-20 lg:pt-20 lg:pb-32 px-6">
+<section id="about" className="pt-16 pb-20 lg:pt-20 lg:pb-32 px-6">
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
