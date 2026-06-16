@@ -276,7 +276,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 </section>
 
-{/* About Section */}
+
+          {/* About Section */}
 <section id="about" className="py-32 px-6">
 
   <div className="max-w-7xl mx-auto">
@@ -292,73 +293,70 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
     </div>
 
-    <div className="grid lg:grid-cols-[1.3fr_1fr] gap-20 items-start">
-
+<div className="grid lg:grid-cols-[1.15fr_1fr] gap-12 items-start">
       {/* Left Side */}
-      <div>
+      <div className="lg:pl-8">
 
-        <h2 className="text-5xl lg:text-6xl font-bold leading-[1.05]">
+<h2 className="text-4xl lg:text-[4.8rem] font-bold leading-[1.08]">
+  Building
 
-          Building
+  <br />
 
-          <br />
+  <span className="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-purple-500 bg-clip-text text-transparent">
+    Digital
+  </span>
 
-          <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
-            Digital
-          </span>
+  <br />
 
-          <br />
+  <span className="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-purple-500 bg-clip-text text-transparent">
+    Solutions
+  </span>
 
-          <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
-            Solutions
-          </span>
+  <br />
 
-          <br />
+  That Make An
 
-          That Make An
+  <br />
 
-          <br />
-
-          Impact.
-
-        </h2>
-
-      </div>
+  Impact.
+</h2>
+</div>
 
       {/* Right Side */}
-      <div>
+<div className="lg:-ml-4">
+       
 
-        {/* Intro Statement */}
-        <div className="border-l-4 border-purple-400 pl-8 mb-8">
+          {/* Intro Statement */}
+<div className="border-l-4 border-purple-400 pl-5 mb-10">
 
-          <p className="text-lg lg:text-xl text-gray-200 leading-relaxed">
-            I am a B.Tech graduate in Information Technology passionate about
-            building scalable digital solutions that solve real-world problems
-            and create meaningful impact.
-          </p>
+<p className="text-base text-gray-100 leading-relaxed">
+  I am a B.Tech graduate in Information Technology passionate about
+  building scalable digital solutions that solve real-world problems
+  and create meaningful impact.
+</p>
 
-        </div>
+</div>
 
-        {/* Paragraph 1 */}
-        <p className="text-base lg:text-lg text-gray-300 leading-8 mb-8">
-          My work spans Full Stack Development, Mobile App Development,
-          and AI-powered solutions, enabling me to build end-to-end
-          applications that combine functionality, scalability, and
-          seamless user experiences.
-        </p>
+{/* Paragraph 1 */}
+<p className="text-[15px] text-gray-300  mb-8">
+  
+  My work spans Full Stack Development, Mobile App Development,
+  and AI-powered solutions, allowing me to build end-to-end
+  applications that combine functionality, performance, and
+  user experience.
+</p>
 
-        {/* Paragraph 2 */}
-        <p className="text-base lg:text-lg text-gray-300 leading-8 mb-10">
-          From creating responsive user interfaces to developing robust
-          backend systems, I enjoy turning ideas into practical solutions
-          that deliver value and solve real-world challenges.
-        </p>
+{/* Paragraph 2 */}
+<p className="text-[15px] text-gray-300 leading-7 mb-8">
+  From creating responsive user interfaces to developing robust
+  backend systems, I enjoy turning ideas into practical solutions
+  that deliver value and solve real-world challenges.
+</p>
 
         {/* CTA */}
         <a
           href="#contact"
-          className="inline-flex items-center gap-3 bg-purple-500 hover:bg-purple-600 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
-        >
+className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8 py-3 rounded-full text-base font-semibold" >
           Let's Connect →
         </a>
 
