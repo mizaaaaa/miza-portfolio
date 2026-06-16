@@ -188,7 +188,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       {/* Hero Section */}
 <section
   id="home"
-  className="relative pt-28 lg:pt-40 pb-4 lg:pb-20 px-6"
+  className="relative pt-28 lg:pt-40 pb-4 lg:pb-20 px-12"
 >
 
 
@@ -196,10 +196,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
   <div className="absolute left-0 top-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
   <div className="absolute right-20 top-40 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
 
-  <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
-    {/* Left Side */}
-    <div className="order-2 md:order-1 text-center md:text-left">
-
+<div className="relative z-10 max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12 items-center">    {/* Left Side */}
+<div className="order-2 md:order-1 text-center md:text-left lg:pl-8">
       <p className="text-purple-400 uppercase tracking-[6px] mb-4 text-m">
         Hello, I'm
       </p>
@@ -278,19 +276,20 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 
           {/* About Section */}
-<section id="about" className="pt-24 pb-20 lg:pt-20 lg:pb-32 px-6">
+<section id="about" className="pt-24 pb-20 lg:pt-20 lg:pb-32 px-10">
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
-<div className="flex items-center gap-4 mb-8 lg:mb-16">
+<div className="flex items-center gap-4 mb-8 lg:mb-16 lg:ml-8">
 
-      <div className="w-14 h-[2px] bg-purple-400"></div>
+  <div className="w-14 h-[2px] bg-purple-400"></div>
 
-      <p className="text-purple-400 uppercase tracking-[6px] text-sm">
-        About Me
-      </p>
+  <p className="text-purple-400 uppercase tracking-[6px] text-sm">
+    About Me
+  </p>
 
-    </div>
+</div>
+    
 
 <div className="grid lg:grid-cols-[1.15fr_1fr] gap-12 items-start">
       {/* Left Side */}
@@ -365,6 +364,142 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 
   </div>
 
+</section>
+
+{/* Skills Section */}
+<section
+  id="skills"
+  className="pt-32 pb-24 px-6 lg:px-12"
+>
+  <div className="max-w-7xl mx-auto">
+
+    {/* Heading */}
+    <h2 className="text-4xl lg:text-5xl font-bold mb-16">
+      Technologies{" "}
+      <span className="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-purple-500 bg-clip-text text-transparent">
+        I Work With
+      </span>
+    </h2>
+
+    {/* Skills Grid */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {/* Frontend */}
+      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-purple-400 mb-5">
+          Frontend Development
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          {["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"].map(
+            (skill) => (
+              <span
+                key={skill}
+                className="text-sm text-gray-300 border border-white/10 px-3 py-1 rounded-lg"
+              >
+                {skill}
+              </span>
+            )
+          )}
+        </div>
+      </div>
+
+      {/* Backend */}
+      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-purple-400 mb-5">
+          Backend Development
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          {["Python", "Node.js", "Flask"].map((skill) => (
+            <span
+              key={skill}
+              className="text-sm text-gray-300 border border-white/10 px-3 py-1 rounded-lg"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile */}
+      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-purple-400 mb-5">
+          Mobile Development
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          <span className="text-sm text-gray-300 border border-white/10 px-3 py-1 rounded-lg">
+            Flutter
+          </span>
+        </div>
+      </div>
+
+      {/* Programming Languages */}
+      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-purple-400 mb-5">
+          Programming Languages
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          {["Python", "Java", "C"].map((skill) => (
+            <span
+              key={skill}
+              className="text-sm text-gray-300 border border-white/10 px-3 py-1 rounded-lg"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Databases */}
+      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-purple-400 mb-5">
+          Databases
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          {["MySQL", "MongoDB"].map((skill) => (
+            <span
+              key={skill}
+              className="text-sm text-gray-300 border border-white/10 px-3 py-1 rounded-lg"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Tools & Platforms */}
+      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-purple-400 mb-5">
+          Tools & Platforms
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          {[
+            "Git",
+            "GitHub",
+            "VS Code",
+            "Render",
+            "Railway",
+            "Google Colab",
+            "Jupyter Notebook",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="text-sm text-gray-300 border border-white/10 px-3 py-1 rounded-lg"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
             {/* Projects Section */}
