@@ -130,7 +130,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
         className="
         flex flex-col items-center
         gap-5
-        py-2
+        py-4
         rounded-3xl
         bg-black/95
         backdrop-blur-md
@@ -276,8 +276,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 </section>
 
-
-          {/* About Section */}
+{/* About Section */}
 <section id="about" className="py-32 px-6">
 
   <div className="max-w-7xl mx-auto">
@@ -293,19 +292,25 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
     </div>
 
-    <div className="grid lg:grid-cols-[1.15fr_1fr] gap-24 items-start">
+    <div className="grid lg:grid-cols-[1.3fr_1fr] gap-20 items-start">
 
       {/* Left Side */}
       <div>
 
-        <h2 className="text-6xl lg:text-7xl font-bold leading-[1.1]">
+        <h2 className="text-5xl lg:text-6xl font-bold leading-[1.05]">
 
           Building
 
           <br />
 
           <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
-            Digital Solutions
+            Digital
+          </span>
+
+          <br />
+
+          <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
+            Solutions
           </span>
 
           <br />
@@ -324,7 +329,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       <div>
 
         {/* Intro Statement */}
-        <div className="border-l-4 border-purple-400 pl-8 mb-10">
+        <div className="border-l-4 border-purple-400 pl-8 mb-8">
 
           <p className="text-lg lg:text-xl text-gray-200 leading-relaxed">
             I am a B.Tech graduate in Information Technology passionate about
@@ -335,7 +340,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
         </div>
 
         {/* Paragraph 1 */}
-        <p className="text-lg text-gray-300 leading-8 mb-8">
+        <p className="text-base lg:text-lg text-gray-300 leading-8 mb-8">
           My work spans Full Stack Development, Mobile App Development,
           and AI-powered solutions, enabling me to build end-to-end
           applications that combine functionality, scalability, and
@@ -343,7 +348,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
         </p>
 
         {/* Paragraph 2 */}
-        <p className="text-lg text-gray-300 leading-8 mb-8">
+        <p className="text-base lg:text-lg text-gray-300 leading-8 mb-10">
           From creating responsive user interfaces to developing robust
           backend systems, I enjoy turning ideas into practical solutions
           that deliver value and solve real-world challenges.
@@ -354,7 +359,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
           href="#contact"
           className="inline-flex items-center gap-3 bg-purple-500 hover:bg-purple-600 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
         >
-          Get In Touch →
+          Let's Connect →
         </a>
 
       </div>
@@ -362,7 +367,9 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
     </div>
 
   </div>
+
 </section>
+
             {/* Projects Section */}
         <section id="projects" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
