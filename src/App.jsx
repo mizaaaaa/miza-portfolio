@@ -130,7 +130,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
         className="
         flex flex-col items-center
         gap-5
-        py-4
+        py-2
         rounded-3xl
         bg-black/95
         backdrop-blur-md
