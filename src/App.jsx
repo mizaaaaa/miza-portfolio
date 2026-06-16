@@ -185,10 +185,11 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
         {/* Glow Effect */}
         <div className="absolute w-72 h-72 bg-purple-500/30 rounded-full blur-3xl"></div>
 
-      {/* Hero Section */}
+
+{/* Hero Section */}
 <section
   id="home"
-  className="relative pt-28 lg:pt-40 pb-4 lg:pb-20 px-12"
+  className="relative pt-28 lg:pt-40 pb-12 lg:pb-24 px-6 lg:px-12"
 >
 
 
@@ -276,7 +277,11 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 
           {/* About Section */}
-<section id="about" className="pt-24 pb-20 lg:pt-20 lg:pb-32 px-10">
+<section
+  id="about"
+  className="py-16 lg:py-24 px-6 lg:px-12"
+>
+  <div className="max-w-7xl mx-auto"></div>
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
@@ -366,11 +371,14 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 
 </section>
 
+
+
 {/* Skills Section */}
 <section
   id="skills"
-  className="pt-32 pb-24 px-6 lg:px-12"
+  className="py-16 lg:py-24 px-6 lg:px-12"
 >
+  <div className="max-w-7xl mx-auto"></div>
   <div className="max-w-7xl mx-auto">
 
     {/* Heading */}
@@ -503,7 +511,11 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 </section>
 
             {/* Projects Section */}
-        <section id="projects" className="py-12 px-6">
+        {/* Projects */}
+<section
+  id="projects"
+  className="py-16 lg:py-24 px-6 lg:px-12"
+>
         <div className="max-w-6xl mx-auto">
 
           {/* Heading */}
@@ -680,8 +692,12 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 
       </section>
 
+
 {/* Experience Section */}
-<section id="experience" className="py-12 px-6">
+<section
+  id="experience"
+  className="py-16 lg:py-24 px-6 lg:px-12"
+>
 
   <div className="max-w-6xl mx-auto">
 
@@ -747,8 +763,12 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 
 </section>
 
+
 {/* Education Section */}
-<section id="education" className="py-12 px-6">
+<section
+  id="education"
+  className="py-16 lg:py-24 px-6 lg:px-12"
+>
 
   <div className="max-w-5xl mx-auto">
 
@@ -790,8 +810,12 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 
 </section>
 
+
 {/* Contact Section */}
-<section id="contact" className="py-12 px-6">
+<section
+  id="contact"
+  className="py-16 lg:py-24 px-6 lg:px-12"
+>
 
   <div className="max-w-5xl mx-auto text-center">
 
