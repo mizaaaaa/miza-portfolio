@@ -188,7 +188,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       {/* Hero Section */}
 <section
   id="home"
-  className="relative pt-50 pb-6 lg:pb-28 px-6"
+  className="relative pt-46 pb-6 lg:pb-28 px-6"
 >
 
 
