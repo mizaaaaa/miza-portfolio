@@ -188,7 +188,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       {/* Hero Section */}
 <section
   id="home"
-  className="relative pt-36 lg:pt-50 pb-4 lg:pb-28 px-6"
+  className="relative pt-28 lg:pt-40 pb-4 lg:pb-20 px-6"
 >
 
 
@@ -278,11 +278,11 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 
           {/* About Section */}
-<section id="about" className="py-20 lg:py-32 px-6">
+<section id="about" className="pt-10 pb-20 lg:pt-20 lg:pb-32 px-6">
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
-    <div className="flex items-center gap-4 mb-16">
+<div className="flex items-center gap-4 mb-8 lg:mb-16">
 
       <div className="w-14 h-[2px] bg-purple-400"></div>
 
