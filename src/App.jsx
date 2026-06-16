@@ -42,112 +42,144 @@ function App() {
   return (
     <div className="bg-black text-white min-h-screen overflow-hidden">
 
-      {/* Navbar */}
-<nav className="fixed top-0 w-full backdrop-blur-md bg-black/30 border-b border-white/10 z-50">
-  <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+     {/* Navbar */}
+<nav className="fixed top-8 left-0 w-full z-50">
+  <div className="w-[94%] mx-auto ">
 
-    <h1 className="text-2xl font-bold text-purple-400">
-      <a
-  href="#home"
-  className="text-2xl font-bold text-purple-400 hover:text-purple-300 transition"
->
-  Miza M
-</a>
-    </h1>
+    <div
+      className="
+      flex justify-between items-center
+      px-8 py-6
+      rounded-full
+      bg-[#12071f]/90
+border border-purple-500/30
+shadow-[0_0_25px_rgba(168,85,247,0.2)]
+      backdrop-blur-md
+      border border-purple-500/20
+      shadow-[0_0_25px_rgba(168,85,247,0.15)]
+      "
+    >
 
-    {/* Desktop Menu */}
-<ul className="hidden md:flex gap-8 text-gray-300">
+      <h1 className="pl-14 text-3xl font-bold text-purple-400">
+        <a
+          href="#home"
+          className="hover:text-purple-300 transition"
+        >
+          Miza M
+        </a>
+      </h1>
 
-  <li>
-    <a href="#about" className="hover:text-purple-400 transition">
-      About
-    </a>
-  </li>
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex items-center pr-14 gap-10 text-[20px] text-gray-200">
 
-  <li>
-    <a href="#skills" className="hover:text-purple-400 transition">
-      Skills
-    </a>
-  </li>
+        <li>
+          <a href="#about" className="hover:text-purple-400 transition">
+            About
+          </a>
+        </li>
 
-  <li>
-    <a href="#projects" className="hover:text-purple-400 transition">
-      Projects
-    </a>
-  </li>
+        <li>
+          <a href="#skills" className="hover:text-purple-400 transition">
+            Skills
+          </a>
+        </li>
 
-  <li>
-    <a href="#experience" className="hover:text-purple-400 transition">
-      Experience
-    </a>
-  </li>
+        <li>
+          <a href="#projects" className="hover:text-purple-400 transition">
+            Projects
+          </a>
+        </li>
 
-  <li>
-    <a href="#education" className="hover:text-purple-400 transition">
-      Education
-    </a>
-  </li>
+        <li>
+          <a href="#experience" className="hover:text-purple-400 transition">
+            Experience
+          </a>
+        </li>
 
-  <li>
-    <a href="#contact" className="hover:text-purple-400 transition">
-      Contact
-    </a>
-  </li>
+        <li>
+          <a href="#education" className="hover:text-purple-400 transition">
+            Education
+          </a>
+        </li>
 
-</ul>
+        <li>
+          <a href="#contact" className="hover:text-purple-400 transition">
+            Contact
+          </a>
+        </li>
 
-{/* Mobile Hamburger */}
-<button
-  className="md:hidden text-white text-3xl"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  {menuOpen ? <X size={28} /> : <Menu size={28} />}
-</button>
+      </ul>
 
-</div>
+      {/* Mobile Hamburger */}
+      <button
+        className="md:hidden text-white"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <X size={30} /> : <Menu size={30} />}
+      </button>
 
-{/* Mobile Menu */}
-{menuOpen && (
-  <ul className="md:hidden flex flex-col items-center gap-4 py-4 bg-black/90 text-white">
+    </div>
 
-    <li>
-      <a href="#about" onClick={() => setMenuOpen(false)}>
-        About
-      </a>
-    </li>
+  </div>
 
-    <li>
-      <a href="#skills" onClick={() => setMenuOpen(false)}>
-        Skills
-      </a>
-    </li>
+  {/* Mobile Menu */}
+  {menuOpen && (
+    <div className="md:hidden mt-3 px-4">
 
-    <li>
-      <a href="#projects" onClick={() => setMenuOpen(false)}>
-        Projects
-      </a>
-    </li>
+      <ul
+        className="
+        flex flex-col items-center
+        gap-5
+        py-6
+        rounded-3xl
+        bg-black/95
+        backdrop-blur-md
+        border border-purple-500/20
+        text-white
+        "
+      >
 
-    <li>
-      <a href="#experience" onClick={() => setMenuOpen(false)}>
-        Experience
-      </a>
-    </li>
+        <li>
+          <a href="#about" onClick={() => setMenuOpen(false)}>
+            About
+          </a>
+        </li>
 
-    <li>
-      <a href="#education" onClick={() => setMenuOpen(false)}>
-        Education
-      </a>
-    </li>
+        <li>
+          <a href="#skills" onClick={() => setMenuOpen(false)}>
+            Skills
+          </a>
+        </li>
 
-    <li>
-      <a href="#contact" onClick={() => setMenuOpen(false)}>
-        Contact
-      </a>
-    </li>
+        <li>
+          <a href="#projects" onClick={() => setMenuOpen(false)}>
+            Projects
+          </a>
+        </li>
 
-  </ul>
-)}
+        <li>
+          <a href="#experience" onClick={() => setMenuOpen(false)}>
+            Experience
+          </a>
+        </li>
+
+        <li>
+          <a href="#education" onClick={() => setMenuOpen(false)}>
+            Education
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  )}
+
 </nav>
       
         {/* Glow Effect */}
@@ -156,8 +188,9 @@ function App() {
       {/* Hero Section */}
 <section
   id="home"
-  className="relative py-20 md:py-28 px-6"
+  className="relative pt-50 pb-28 px-6"
 >
+
 
   {/* Background Glow */}
   <div className="absolute left-0 top-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
@@ -167,7 +200,7 @@ function App() {
     {/* Left Side */}
     <div className="order-2 md:order-1 text-center md:text-left">
 
-      <p className="text-purple-400 uppercase tracking-[6px] mb-4 text-sm">
+      <p className="text-purple-400 uppercase tracking-[6px] mb-4 text-m">
         Hello, I'm
       </p>
 
@@ -179,7 +212,7 @@ function App() {
         AI & Full Stack Developer
       </p>
 
-<p className="max-w-lg text-gray-300 text-lg leading-relaxed md:mx-0 mx-auto">
+<p className="max-w-xl text-gray-300 text-lg leading-relaxed">
         Passionate about Full Stack Development, Mobile App Development,
         and AI-powered solutions. Experienced in building scalable
         applications, intelligent systems, and user-focused software
@@ -190,7 +223,7 @@ function App() {
 
         <a
           href="#projects"
-          className="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-xl font-semibold transition"
+         className="bg-purple-500 hover:bg-purple-600 px-8 py-4 rounded-xl font-semibold text-lg transition"
         >
           View Projects
         </a>
@@ -199,7 +232,7 @@ function App() {
           href={resumePdf}
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition"
+          className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-semibold text-lg transition"
         >
           View Resume
         </a>
@@ -230,6 +263,7 @@ function App() {
             alt="Miza M"
             className="w-full h-full object-cover object-top"
             
+            
           />
 
         </div>
@@ -243,78 +277,84 @@ function App() {
 </section>
 
 
-            {/* About Section */}
-<section id="about" className="pt-6 pb-16 px-6">
+           {/* About Section */}
+<section id="about" className="py-32 px-6">
 
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <div className="max-w-7xl mx-auto">
 
-    {/* Left Side */}
-    <div>
+    {/* Section Label */}
+    <div className="flex items-center gap-4 mb-16">
 
-      <p className="text-purple-400 text-lg mb-3">
+      <div className="w-14 h-[2px] bg-purple-400"></div>
+
+      <p className="text-purple-400 uppercase tracking-[6px] text-sm">
         About Me
-      </p>
-
-      <h2 className="text-4xl font-bold mb-6">
-        Passionate About Building Full Stack Solutions
-      </h2>
-
-      <p className="text-gray-400 leading-relaxed mb-4">
-        I am a B.Tech graduate in Information Technology with a strong
-        interest in Full Stack Development, software engineering, and
-        scalable web applications. I enjoy building end-to-end solutions
-        that combine intuitive user experiences with robust backend systems.
-      </p>
-
-      <p className="text-gray-400 leading-relaxed">
-        My experience includes developing frontend interfaces, backend
-        services, database-driven applications, and AI-powered solutions
-        using modern technologies. I am passionate about creating impactful
-        software that solves real-world problems.
       </p>
 
     </div>
 
-    {/* Right Side */}
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
+    <div className="grid lg:grid-cols-[1.3fr_1fr] gap-20 items-start">
 
-      <div className="grid grid-cols-2 gap-6">
+      {/* Left Side */}
+      <div>
 
-        <div>
-          <h3 className="text-3xl font-bold text-purple-400">
-            4+
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Major Projects
-          </p>
-        </div>
+        <h2 className="text-6xl lg:text-8xl font-bold leading-[1.05]">
 
-        <div>
-          <h3 className="text-3xl font-bold text-purple-400">
-            2
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Internships
-          </p>
-        </div>
+          Building
 
-        <div>
-          <h3 className="text-3xl font-bold text-purple-400">
-            Full Stack
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Development
-          </p>
-        </div>
+          <br />
 
-        <div>
-          <h3 className="text-3xl font-bold text-purple-400">
-            2026
-          </h3>
-          <p className="text-gray-400 mt-2">
-            Graduate
-          </p>
-        </div>
+          <span className="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-purple-600 bg-clip-text text-transparent">
+            Digital Solutions
+          </span>
+
+          <br />
+
+          That Make An
+
+          <br />
+
+          Impact.
+
+        </h2>
+
+      </div>
+
+      {/* Right Side */}
+      <div>
+
+        {/* Intro Statement */}
+<div className="border-l-4 border-purple-400 pl-8 mb-10">
+
+  <p className="text-xl text-gray-200 leading-relaxed">
+    I am a B.Tech graduate in Information Technology passionate about
+    building scalable digital solutions that solve real-world problems
+    and create meaningful impact.
+  </p>
+
+</div>
+
+{/* Paragraph 1 */}
+<p className="text-lg text-gray-400 leading-8 mb-8">
+  My work spans Full Stack Development, Mobile App Development, 
+  and AI-powered solutions, enabling me to build end-to-end
+   applications that combine functionality, scalability, and user experience.
+</p>
+
+{/* Paragraph 2 */}
+<p className="text-lg text-gray-400 leading-8 mb-10">
+  From creating responsive user interfaces to developing robust
+  backend systems, I enjoy turning ideas into practical solutions
+  that deliver value and solve real-world challenges.
+</p>
+
+        {/* CTA */}
+        <a
+          href="#contact"
+          className="inline-flex items-center gap-3 bg-purple-500 hover:bg-purple-600 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
+        >
+          Let's Connect →
+        </a>
 
       </div>
 
@@ -323,106 +363,9 @@ function App() {
   </div>
 
 </section>
-            {/* Skills Section */}
-      <section id="skills" className="py-24 px-6">
-
-        <div className="max-w-6xl mx-auto">
-
-          {/* Heading */}
-          <div className="text-center mb-16">
-
-            <p className="text-purple-400 text-lg mb-3">
-              Skills
-            </p>
-
-            <h2 className="text-4xl font-bold">
-              Technologies I Work With
-            </h2>
-
-          </div>
-
-          {/* Skills Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Python
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Java
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                C
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                HTML & CSS
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                MySQL
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Flask
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                AI/ML
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                React
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Tailwind CSS
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Git & GitHub
-              </h3>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Flutter
-              </h3>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-purple-500/10 transition">
-              <h3 className="text-xl font-semibold">
-                Node.js
-              </h3>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
 
             {/* Projects Section */}
-        <section id="projects" className="py-16 px-6">
+        <section id="projects" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
 
           {/* Heading */}
@@ -600,7 +543,7 @@ function App() {
       </section>
 
 {/* Experience Section */}
-<section id="experience" className="py-16 px-6">
+<section id="experience" className="py-12 px-6">
 
   <div className="max-w-6xl mx-auto">
 
@@ -710,7 +653,7 @@ function App() {
 </section>
 
 {/* Contact Section */}
-<section id="contact" className="py-16 px-6">
+<section id="contact" className="py-12 px-6">
 
   <div className="max-w-5xl mx-auto text-center">
 
