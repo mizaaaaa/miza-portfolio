@@ -281,8 +281,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
-    <div className="flex items-center gap-4 mb-16">
-
+<div className="flex items-center gap-4 mb-8 lg:mb-16">
       <div className="w-14 h-[2px] bg-purple-400"></div>
 
       <p className="text-purple-400 uppercase tracking-[6px] text-sm">
