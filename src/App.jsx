@@ -277,7 +277,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 </section>
 
 
-           {/* About Section */}
+          {/* About Section */}
 <section id="about" className="py-32 px-6">
 
   <div className="max-w-7xl mx-auto">
@@ -293,18 +293,18 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
     </div>
 
-    <div className="grid lg:grid-cols-[1.3fr_1fr] gap-20 items-start">
+    <div className="grid lg:grid-cols-[1.15fr_1fr] gap-24 items-start">
 
       {/* Left Side */}
       <div>
 
-        <h2 className="text-6xl lg:text-8xl font-bold leading-[1.05]">
+        <h2 className="text-6xl lg:text-7xl font-bold leading-[1.1]">
 
           Building
 
           <br />
 
-          <span className="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-purple-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
             Digital Solutions
           </span>
 
@@ -324,36 +324,37 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       <div>
 
         {/* Intro Statement */}
-<div className="border-l-4 border-purple-400 pl-8 mb-10">
+        <div className="border-l-4 border-purple-400 pl-8 mb-10">
 
-  <p className="text-xl text-gray-200 leading-relaxed">
-    I am a B.Tech graduate in Information Technology passionate about
-    building scalable digital solutions that solve real-world problems
-    and create meaningful impact.
-  </p>
+          <p className="text-lg lg:text-xl text-gray-200 leading-relaxed">
+            I am a B.Tech graduate in Information Technology passionate about
+            building scalable digital solutions that solve real-world problems
+            and create meaningful impact.
+          </p>
 
-</div>
+        </div>
 
-{/* Paragraph 1 */}
-<p className="text-lg text-gray-400 leading-8 mb-8">
-  My work spans Full Stack Development, Mobile App Development, 
-  and AI-powered solutions, enabling me to build end-to-end
-   applications that combine functionality, scalability, and user experience.
-</p>
+        {/* Paragraph 1 */}
+        <p className="text-lg text-gray-300 leading-8 mb-8">
+          My work spans Full Stack Development, Mobile App Development,
+          and AI-powered solutions, enabling me to build end-to-end
+          applications that combine functionality, scalability, and
+          seamless user experiences.
+        </p>
 
-{/* Paragraph 2 */}
-<p className="text-lg text-gray-400 leading-8 mb-10">
-  From creating responsive user interfaces to developing robust
-  backend systems, I enjoy turning ideas into practical solutions
-  that deliver value and solve real-world challenges.
-</p>
+        {/* Paragraph 2 */}
+        <p className="text-lg text-gray-300 leading-8 mb-8">
+          From creating responsive user interfaces to developing robust
+          backend systems, I enjoy turning ideas into practical solutions
+          that deliver value and solve real-world challenges.
+        </p>
 
         {/* CTA */}
         <a
           href="#contact"
           className="inline-flex items-center gap-3 bg-purple-500 hover:bg-purple-600 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
         >
-          Let's Connect →
+          Get In Touch →
         </a>
 
       </div>
@@ -361,9 +362,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
     </div>
 
   </div>
-
 </section>
-
             {/* Projects Section */}
         <section id="projects" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
