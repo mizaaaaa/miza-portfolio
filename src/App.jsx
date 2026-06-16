@@ -278,7 +278,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 
           {/* About Section */}
-<section id="about" className="py-16 lg:py-32 px-6">
+<section id="about" className="py-32 px-6">
+
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
@@ -292,9 +293,10 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
     </div>
 
-<div className="grid lg:grid-cols-[1.15fr_1fr] gap-8 lg:gap-12 items-start">
-        {/* Left Side */}
-<div className="lg:pl-8 mb-4 lg:mb-0">
+<div className="grid lg:grid-cols-[1.15fr_1fr] gap-12 items-start">
+      {/* Left Side */}
+      <div className="lg:pl-8">
+
 <h2 className="text-4xl lg:text-[4.8rem] font-bold leading-[1.08]">
   Building
 
@@ -325,7 +327,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
        
 
           {/* Intro Statement */}
-<div className="border-l-4 border-purple-400 pl-5 mb-6 lg:mb-10">
+<div className="border-l-4 border-purple-400 pl-5 mb-10">
+
 <p className="text-base text-gray-100 leading-relaxed">
   I am a B.Tech graduate in Information Technology passionate about
   building scalable digital solutions that solve real-world problems
@@ -335,7 +338,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 </div>
 
 {/* Paragraph 1 */}
-<p className="text-[15px] text-gray-400 leading-7 mb-5 lg:mb-8">  
+<p className="text-[15px] text-gray-300  mb-8">
+  
   My work spans Full Stack Development, Mobile App Development,
   and AI-powered solutions, allowing me to build end-to-end
   applications that combine functionality, performance, and
@@ -343,8 +347,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 </p>
 
 {/* Paragraph 2 */}
-<p className="text-[15px] text-gray-400 leading-7 mb-5 lg:mb-8">
-    From creating responsive user interfaces to developing robust
+<p className="text-[15px] text-gray-300 leading-7 mb-8">
+  From creating responsive user interfaces to developing robust
   backend systems, I enjoy turning ideas into practical solutions
   that deliver value and solve real-world challenges.
 </p>
