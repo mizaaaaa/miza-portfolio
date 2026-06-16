@@ -188,7 +188,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       {/* Hero Section */}
 <section
   id="home"
-  className="relative pt-50 pb-8 lg:pb-28 px-6"
+  className="relative pt-50 pb-6 lg:pb-28 px-6"
 >
 
 
@@ -242,7 +242,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
     </div>
 
     {/* Right Side */}
-<div className="order-1 md:order-2 flex justify-center mb-4 md:mb-0">
+    <div className="order-1 md:order-2 flex justify-center mb-10 md:mb-0">
+
       <div className="relative">
 
         {/* Glow */}
@@ -281,7 +282,8 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
-<div className="flex items-center gap-4 mb-8 lg:mb-16">
+    <div className="flex items-center gap-4 mb-16">
+
       <div className="w-14 h-[2px] bg-purple-400"></div>
 
       <p className="text-purple-400 uppercase tracking-[6px] text-sm">
