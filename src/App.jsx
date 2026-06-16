@@ -298,7 +298,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
       {/* Left Side */}
       <div>
 
-        <h2 className="text-6xl lg:text-7xl font-bold leading-[1.1]">
+        <h2 className="text-6xl lg:text-8xl font-bold leading-[1.05]">
 
           Building
 
