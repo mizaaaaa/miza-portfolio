@@ -278,8 +278,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 
           {/* About Section */}
-<section id="about" className="py-32 px-6">
-
+<section id="about" className="py-20 lg:py-32 px-6">
   <div className="max-w-7xl mx-auto">
 
     {/* Section Label */}
