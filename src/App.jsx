@@ -294,7 +294,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 
 <div className="grid lg:grid-cols-[1.15fr_1fr] gap-12 items-start">
       {/* Left Side */}
-      <div className="lg:pl-8">
+      <div>
 
 <h2 className="text-4xl lg:text-[4.8rem] font-bold leading-[1.08]">
   Building
@@ -322,7 +322,7 @@ shadow-[0_0_25px_rgba(168,85,247,0.2)]
 </div>
 
       {/* Right Side */}
-<div className="lg:-ml-4">
+<div>
        
 
           {/* Intro Statement */}
