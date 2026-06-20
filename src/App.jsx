@@ -921,7 +921,7 @@ CSS
    <img
   src={archaeologyMain}
   alt="AI-Powered Archaeological Site Mapping"
-  className="w-full h-[220px] md:h-full object-cover"
+  className="w-full h-[250px] md:h-full object-cover object-center"
 />
 
   {/* Content */}
