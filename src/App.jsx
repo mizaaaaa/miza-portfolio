@@ -732,7 +732,7 @@ className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 px-8
 
     {/* Project Image */}
     
-  <div className="h-[350px] overflow-hidden rounded-t-3xl">
+  <div className="h-[250px] md:h-[350px] overflow-hidden rounded-t-3xl">
   <img
     src={safespaceMain}
     alt="SafeSpace"
