@@ -794,7 +794,7 @@ className="text-purple-400 text-sm font-semibold hover:text-purple-300 transitio
   <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
 
     {/* Project Image */}
-  <div className="h-[350px] overflow-hidden rounded-t-3xl">
+  <div className="h-[250px] md:h-[350px] overflow-hidden rounded-t-3xl">
   <img
     src={carbonMain}
     alt="Carbon Footprint Tracker"
