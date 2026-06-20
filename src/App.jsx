@@ -917,13 +917,12 @@ CSS
 <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-purple-500 hover:-translate-y-1 transition-all duration-300">
 
   {/* Project Image */}
-  <div className="h-[350px] overflow-hidden rounded-t-3xl">
-    <img
-      src={archaeologyMain}
-      alt="AI-Powered Archaeological Site Mapping"
-      className="w-full h-full object-cover"
-    />
-  </div>
+  <div className="h-[350px] md:h-[400px] overflow-hidden rounded-t-3xl">
+   <img
+  src={archaeologyMain}
+  alt="AI-Powered Archaeological Site Mapping"
+  className="w-full h-[220px] md:h-full object-cover"
+/>
 
   {/* Content */}
   <div className="p-6">
