@@ -1329,13 +1329,13 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
           {safeSpaceSlides.map((section) => (
             <SwiperSlide key={section.title}>
 
-              <h3 className="text-4xl font-bold text-center mb-8">
-                {section.title}
+<h3 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8">
+                  {section.title}
               </h3>
 
               {/* Image */}
 
-<div className="w-[110%] -ml-[5%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-1 md:p-5">
+<div className="w-[115%] -ml-[7.5%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-0 md:p-5">
   <img
     src={section.image}
     alt={section.title}
