@@ -43,7 +43,7 @@ const [activeEarlyMindSection, setActiveEarlyMindSection] = useState(0);
 const earlyMindRef = useRef(null);
 const [activeCarbonSection, setActiveCarbonSection] = useState(0);
 const carbonRef = useRef(null);
-
+const [zoomImage, setZoomImage] = useState(null);
 
 
 const safeSpaceSlides = [
@@ -1540,11 +1540,21 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
 {/* Image */}
 
 <div className="w-full rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-2 md:p-5">
- <img
+
+  <img
     src={section.image}
     alt={section.title}
-    className="w-full h-auto object-contain max-h-[600px] sm:max-h-[650px] md:max-h-[520px]"
+    onClick={() => {
+      if (window.innerWidth < 768) {
+        setZoomImage(section.image);
+      }
+    }}
+    className="w-full h-auto object-contain max-h-[420px] sm:max-h-[480px] md:max-h-[520px] cursor-zoom-in md:cursor-default"
   />
+
+  <p className="text-center text-xs text-gray-500 mt-2 md:hidden">
+    🔍 Tap image to enlarge
+  </p>
 
 </div>
 
@@ -2042,6 +2052,18 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
       </div>
 
     </div>
+  </div>
+)}
+{zoomImage && (
+  <div
+    className="fixed inset-0 bg-black/95 z-[99999] flex items-center justify-center p-4 md:hidden"
+    onClick={() => setZoomImage(null)}
+  >
+    <img
+      src={zoomImage}
+      alt="Zoomed"
+      className="max-w-full max-h-full object-contain"
+    />
   </div>
 )}
     </div>
