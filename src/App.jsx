@@ -1679,7 +1679,7 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
     </div>
 
     <div
-      className="max-w-6xl mx-auto p-8 min-h-screen
+      className="max-w-6xl mx-auto p-8 min-h-screen"
       onClick={(e) => e.stopPropagation()}
     >
 
