@@ -1506,13 +1506,20 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
         </h3>
 
         <p className="text-gray-400 leading-relaxed text-lg">
-          Carbon Footprint Tracker is a full-stack sustainability platform
-          designed to help users measure, analyze, and reduce their
-          environmental impact. The system combines carbon emission
-          calculators, AI-powered recommendations, analytics dashboards,
-          community engagement features, and sustainability challenges
-          to encourage eco-friendly habits and responsible environmental
-          decision-making.
+
+
+          Carbon Footprint Tracker is a full-stack web application 
+          that enables users to measure, monitor, and reduce their carbon footprint
+           based on daily activities such as energy consumption, transportation, 
+           and waste management. The platform calculates carbon emissions,
+            provides detailed analytics and reports, and delivers AI-powered 
+            personalized recommendations to help users adopt more sustainable habits.
+             Community engagement features, leaderboards, and environmental challenges
+              further encourage users to track their progress, promote eco-friendly practices,
+               and make informed environmental 
+              decisions for a more sustainable future.
+
+
         </p>
 
       </div>
