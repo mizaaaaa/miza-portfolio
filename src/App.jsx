@@ -1533,21 +1533,23 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
           {carbonSections.map((section) => (
             <SwiperSlide key={section.title}>
 
-              <h3 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8">
+             <h3 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-8">
   {section.title}
 </h3>
+  
 
 {/* Image */}
 
-<div className="w-[110%] -ml-[5%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-0 md:p-5">
+<div className="w-[112%] -ml-[6%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-0 md:p-5">
 
   <img
     src={section.image}
     alt={section.title}
-    className="w-full h-auto object-contain max-h-[420px] sm:max-h-[480px] md:max-h-[520px]"
+    className="w-full h-auto object-contain max-h-[520px] sm:max-h-[560px] md:max-h-[520px]"
   />
 
 </div>
+
 
               {/* Counter */}
               <div className="flex justify-center items-center gap-4 mt-6 mb-8">
