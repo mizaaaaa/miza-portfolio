@@ -1247,9 +1247,9 @@ CSS
     </div>
 
     <div
-      className="max-w-6xl mx-auto p-8 min-h-screen"
-      onClick={(e) => e.stopPropagation()}
-    >
+  className="max-w-6xl mx-auto px-3 md:p-8 min-h-screen"
+  onClick={(e) => e.stopPropagation()}
+>
       {/* Hero Card */}
 
       <div className="bg-[#0f0f0f] border border-purple-500/20 rounded-3xl p-8 mb-8">
@@ -1335,8 +1335,7 @@ CSS
 
               {/* Image */}
 
-              <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-2 md:p-5">
-
+<div className="max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-2 md:p-5">
   <img
     src={section.image}
     alt={section.title}
