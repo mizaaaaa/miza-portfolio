@@ -1335,7 +1335,7 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
 
               {/* Image */}
 
-<div className="w-[112%] -ml-[7.5%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-0 md:p-5">
+<div className="w-[111%] -ml-[7.5%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-0 md:p-5">
   <img
     src={section.image}
     alt={section.title}
