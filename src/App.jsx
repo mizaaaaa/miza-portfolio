@@ -1772,11 +1772,19 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
   <img
     src={section.image}
     alt={section.title}
-    className="w-full h-auto object-contain max-h-[420px] sm:max-h-[480px] md:max-h-[550px]"
+    onClick={() => {
+      if (window.innerWidth < 768) {
+        setZoomImage(section.image);
+      }
+    }}
+    className="w-full h-auto object-contain max-h-[500px] sm:max-h-[550px] md:max-h-[550px] cursor-zoom-in md:cursor-default"
   />
 
-</div>
+  <p className="text-center text-xs text-gray-500 mt-2 md:hidden">
+    🔍 Tap image to enlarge
+  </p>
 
+</div>
               {/* Counter */}
 
               <div className="flex justify-center items-center gap-4 mt-6 mb-8">
@@ -1975,8 +1983,17 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
   <img
     src={section.image}
     alt={section.title}
-    className="w-full h-auto object-contain max-h-[420px] sm:max-h-[480px] md:max-h-[550px]"
+    onClick={() => {
+      if (window.innerWidth < 768) {
+        setZoomImage(section.image);
+      }
+    }}
+    className="w-full h-auto object-contain max-h-[420px] sm:max-h-[480px] md:max-h-[550px] cursor-zoom-in md:cursor-default"
   />
+
+  <p className="text-center text-xs text-gray-500 mt-2 md:hidden">
+    🔍 Tap image to enlarge
+  </p>
 
 </div>
               
