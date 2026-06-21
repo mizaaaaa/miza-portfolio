@@ -1335,15 +1335,15 @@ CSS
 
               {/* Image */}
 
-              <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-5">
+              <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-2 md:p-5">
 
-                <img
-                  src={section.image}
-                  alt={section.title}
-                  className="w-full max-h-[520px] object-contain"
-                />
+  <img
+    src={section.image}
+    alt={section.title}
+    className="w-full h-auto object-contain max-h-[420px] sm:max-h-[480px] md:max-h-[520px]"
+  />
 
-              </div>
+</div>
 
               {/* Counter */}
 
