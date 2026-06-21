@@ -1539,13 +1539,11 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
 
 {/* Image */}
 
-<div className="w-[108%] -ml-[4%] md:w-full md:ml-0 rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-0 md:p-5">  <img
-    src={section.image}
+<div className="w-full rounded-3xl overflow-hidden border border-white/10 bg-[#1a1a1a] p-2 md:p-5"    src={section.image}
     alt={section.title}
     className="w-full h-auto object-contain max-h-[600px] sm:max-h-[650px] md:max-h-[520px]"
   />
 
-</div>
 
 
               {/* Counter */}
