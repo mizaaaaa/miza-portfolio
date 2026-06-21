@@ -1772,7 +1772,9 @@ className="max-w-6xl mx-auto px-1 md:p-8 min-h-screen"
   <img
     src={section.image}
     alt={section.title}
-    onClick={() => {
+    onClick={(e) => {
+      e.stopPropagation();
+
       if (window.innerWidth < 768) {
         setZoomImage(section.image);
       }
